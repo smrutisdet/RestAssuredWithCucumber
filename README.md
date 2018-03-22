@@ -13,7 +13,7 @@ Intent of this project is to illustrate REST services testing using REST-assured
 
 
 ##Stack##
-This java project has been created using Eclipse Neon. REST-assured cucumber have been included in project via maven. Tests have been written in Testng.
+This java project has been created using Eclipse Neon. REST-assured and cucumber have been included in project via maven. Tests have been written in Junit.
 
 ##Different test styles##
 Using REST-assured and cucumber there are many ways to write tests. 
@@ -21,6 +21,5 @@ The glue codes are in stepdefs package and cucumberRunner is starting point for 
 Base Steps class contains the methods to perform the actual http method requests and verifies the response.
 apiClasses package contains the classes which defines the attributes present in response given by api.
 pom.xml is the maven build file which manages the dependencies required to execute the project.  
-
 For downloading  and setting up a rest api use URL:https://github.com/typicode/json-server and follow the steps to configure it.
-Change the test data value for every api calls in feature files.
+Change the test data value for every api call in feature files.
