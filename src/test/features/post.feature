@@ -1,4 +1,4 @@
-Feature: I want to test local post features
+Feature: User wants to test local post features
 
 @post
 Scenario Outline: Testing post request for posts
