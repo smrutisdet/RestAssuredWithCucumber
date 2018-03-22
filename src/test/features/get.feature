@@ -1,4 +1,4 @@
-Feature: I am able to hit local service.
+Feature: User is  able to hit local service.
 
 @get
 Scenario Outline: Testing all get operations in local service
