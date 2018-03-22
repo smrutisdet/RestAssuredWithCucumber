@@ -22,4 +22,5 @@ Base Steps class contains the methods to perform the actual http method requests
 apiClasses package contains the classes which defines the attributes present in response given by api.
 pom.xml is the maven build file which manages the dependencies required to execute the project.  
 
-
+For downloading  and setting up a rest api use URL:https://github.com/typicode/json-server and follow the steps to configure it.
+Change the test data value for every api calls in feature files.
