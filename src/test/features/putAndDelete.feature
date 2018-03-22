@@ -1,4 +1,4 @@
-Feature: I want to perform the other operations like put and delete
+Feature: User wants to perform the other operations like put and delete
 
   @putOperation
   Scenario Outline: 
