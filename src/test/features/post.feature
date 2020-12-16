@@ -7,6 +7,6 @@ When Api produces correct request for post with '<id>' and '<title>' and '<autho
 Then User gets proper response with '<id>' and '<title>' and '<author>'
 Examples:
 |appendString|id|title|author|
-|posts|40|Fourty post|Author40|
+|posts|5|Json-server 5|QA Test|
 
 
