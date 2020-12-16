@@ -23,3 +23,5 @@ apiClasses package contains the classes which defines the attributes present in 
 pom.xml is the maven build file which manages the dependencies required to execute the project.  
 For downloading  and setting up a rest api use URL:https://github.com/typicode/json-server and follow the steps to configure it.
 Change the test data value for every api call in feature files.
+
+## Run your pom.xml with command clean test
