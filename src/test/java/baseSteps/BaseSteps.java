@@ -2,34 +2,51 @@ package baseSteps;
 
 import org.junit.Assert;
 //import org.testng.Assert;
-
 import apiClasses.Comments;
 import apiClasses.PostRequest;
 import io.restassured.response.Response;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
 
 import static io.restassured.RestAssured.*;
 
 import io.restassured.http.ContentType;
-import io.restassured.path.json.JsonPath;
-import io.restassured.response.Response;
-import io.restassured.response.ValidatableResponse;
-import io.restassured.specification.RequestSpecification;
 
+import java.util.Properties;
+import java.util.logging.Logger;
+
+import cucumber.api.java.Before;
+import cucumber.api.Scenario;
 
 public class BaseSteps {
-    private String baseUrl = "http://localhost:3000";
+    //private String baseUrl = "http://localhost:3000";
     private Response response;
     private int statusCode;
     private String url;
     private Comments comment;
     String body;
+    private final static Logger logger = Logger.getLogger(BaseSteps.class.getName());
+    private Properties prop;
+    private String baseURL;
+    public void setAPIEndpointURL() {
+        try {
+            prop = new Properties();
+            //load a properties file from class path, inside static method
+            prop.load(BaseSteps.class.getClassLoader()
+                    .getResourceAsStream("environment.properties"));
+            baseURL = prop.getProperty("baseUrl");
+            logger.info(" Base URL is :" + baseURL);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
     //-----------------------GET------------------------------------
 
     public void hitlocalWebServiceWithUrl(String appendString) {
-        url = baseUrl + "/" + appendString;
-        response = given().get(url);
+        setAPIEndpointURL();
+        url = baseURL + "/" + appendString;
+        logger.info("=======URL is++++++++++++++++++++++++++ " + url);
+        response = given().log().all().get(url);
     }
 
     public void processGetRequest() {
@@ -46,12 +63,12 @@ public class BaseSteps {
         postObject.setId(id);
         postObject.setTitle(title);
         postObject.setAuthor(author);
-        response = given().when().contentType(ContentType.JSON).body(postObject).post(url);
+        response = given().log().all().when().contentType(ContentType.JSON).body(postObject).post(url);
     }
 
     public void verifyPostCorrectlyCreated(int id, String title, String author) {
         body = response.getBody().asString();
-        System.out.println("body is" + body);
+        logger.info("body is" + body);
 
         Assert.assertTrue(body.contains(Integer.toString(id)));
         Assert.assertTrue(body.contains(title));
@@ -69,9 +86,11 @@ public class BaseSteps {
     }
 
     public void hitServiceWithPutRequest(int id) {
-        String putUrl = baseUrl + "/comments/" + id;
-        response = given().when().contentType(ContentType.JSON).body(comment).put(putUrl);
-        System.out.println("put respons++ " + response.getBody().asString());
+        setAPIEndpointURL();
+        String putUrl = baseURL + "/comments/" + id;
+        logger.info("Put URL is========== "+putUrl);
+        response = given().log().all().when().contentType(ContentType.JSON).body(comment).put(putUrl);
+        logger.info("put response++ " + response.getBody().asString());
     }
 
     public void put_VerifyResultOfOperation(int id, String body) {
@@ -82,9 +101,9 @@ public class BaseSteps {
 
 
     public void delete_HitServiceWithDeleteRequest(int id) {
-        String deleteUrl = baseUrl + "/comments/" + id;
-        response = given().when().contentType(ContentType.JSON).delete(deleteUrl);
-        System.out.println("patch respons++ " + response.getBody().asString());
+        String deleteUrl = baseURL + "/comments/" + id;
+        response = given().log().all().when().contentType(ContentType.JSON).delete(deleteUrl);
+        logger.info("patch response++ " + response.getBody().asString());
     }
 
     public void delete_VerifyResultOfOperation() {
