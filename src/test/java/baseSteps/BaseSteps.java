@@ -1,5 +1,7 @@
 package baseSteps;
 
+import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
 import org.junit.Assert;
 //import org.testng.Assert;
 import apiClasses.Comments;
@@ -10,6 +12,7 @@ import static io.restassured.RestAssured.*;
 
 import io.restassured.http.ContentType;
 
+import java.util.ArrayList;
 import java.util.Properties;
 import java.util.logging.Logger;
 
@@ -26,6 +29,7 @@ public class BaseSteps {
     private final static Logger logger = Logger.getLogger(BaseSteps.class.getName());
     private Properties prop;
     private String baseURL;
+
     public void setAPIEndpointURL() {
         try {
             prop = new Properties();
@@ -53,10 +57,13 @@ public class BaseSteps {
         statusCode = response.getStatusCode();
     }
 
-    public void verifyGetRequest(int expectedStatusCode) {
+    public void verifyGetRequestStatusCode(int expectedStatusCode) {
         Assert.assertTrue(statusCode == expectedStatusCode);
     }
 
+    public void verifyRsponseisJSONformat() {
+        given().log().all().get(url).then().assertThat().contentType(ContentType.JSON);
+    }
     //-------------------------------- POST ---------------------------------
     public void createPostsUsingPostOperations(int id, String title, String author) {
         PostRequest postObject = new PostRequest();
@@ -88,7 +95,7 @@ public class BaseSteps {
     public void hitServiceWithPutRequest(int id) {
         setAPIEndpointURL();
         String putUrl = baseURL + "/comments/" + id;
-        logger.info("Put URL is========== "+putUrl);
+        logger.info("Put URL is========== " + putUrl);
         response = given().log().all().when().contentType(ContentType.JSON).body(comment).put(putUrl);
         logger.info("put response++ " + response.getBody().asString());
     }
@@ -109,5 +116,37 @@ public class BaseSteps {
     public void delete_VerifyResultOfOperation() {
         Assert.assertTrue((response.getBody().asString()).equals("{}"));
     }
-}
 
+
+//-----------------common operations/ reusable methods======================================
+
+    public void getJSONResponse() {
+        // Base URI
+        //RestAssured.baseURI = baseURL;
+        // validate that response is 200 and content type is JSON
+        Response rawResponse = given().log().all().when().get(url).then().extract().response();
+        logger.info("Raw Response is:" + rawResponse);
+        String stringResponse = rawResponse.asString();
+        logger.info("Response in String format is:" + stringResponse);
+        JsonPath jsonResponse = new JsonPath(stringResponse);
+        logger.info("Response in JSON format is:" + jsonResponse);
+//        String firstUser = jsonResponse.get("[0].author");
+//        logger.info(firstUser);
+
+    }
+    public void verifyIDInResponse(int id) {
+        // Base URI
+        //RestAssured.baseURI = baseURL;
+        // validate that response is 200 and content type is JSON
+        logger.info("URL for get with append string is:+++++++++"+url);
+        Response rawResponse = given().log().all().when().get(url).then().extract().response();
+        logger.info("Raw Response is:" + rawResponse);
+        String stringResponse = rawResponse.asString();
+        logger.info("Response in String format is:" + stringResponse);
+        JsonPath jsonResponse = new JsonPath(stringResponse);
+        logger.info("Response in JSON format is:" + jsonResponse);
+        int aid=jsonResponse.getInt("id");
+        logger.info("Actual response id is:"+aid);
+        Assert.assertTrue(id==aid);
+    }
+}

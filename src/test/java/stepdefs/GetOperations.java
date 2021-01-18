@@ -20,7 +20,19 @@ public class GetOperations {
     }
 
     @Then("^User gets the correct '(\\d+)'$")
-    public void userGetsCorrectResponse(int statusCode) {
-        steps.verifyGetRequest(statusCode);
+    public void userGetsCorrectResponseCode(int statusCode) {
+        steps.verifyGetRequestStatusCode(statusCode);
+    }
+    @Then("^Rsponse is in JSON format$")
+    public void verifyContentType() {
+        steps.verifyRsponseisJSONformat();
+    }
+    @Then("^return the JSON response$")
+    public void returnTheJsonResponse() {
+        steps.getJSONResponse();
+    }
+    @Then("^id is '(\\d+)'$")
+    public void verifyIDIsMatched(int id) {
+        steps.verifyIDInResponse(id);
     }
 }
