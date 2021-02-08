@@ -7,17 +7,14 @@ import org.junit.Assert;
 import apiClasses.Comments;
 import apiClasses.PostRequest;
 import io.restassured.response.Response;
-
 import static io.restassured.RestAssured.*;
-
 import io.restassured.http.ContentType;
-
 import java.util.ArrayList;
 import java.util.Properties;
-import java.util.logging.Logger;
-
 import cucumber.api.java.Before;
 import cucumber.api.Scenario;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 
 public class BaseSteps {
     //private String baseUrl = "http://localhost:3000";
@@ -26,7 +23,7 @@ public class BaseSteps {
     private String url;
     private Comments comment;
     String body;
-    private final static Logger logger = Logger.getLogger(BaseSteps.class.getName());
+    static Logger logger = Logger.getLogger(BaseSteps.class.getName());
     private Properties prop;
     private String baseURL;
 
