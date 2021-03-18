@@ -1,0 +1,940 @@
+ INFO main - 2021-03-18 14:26:15.830; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 14:26:15.835; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/posts
+ DEBUG main - 2021-03-18 14:26:17.431; - org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+ DEBUG main - 2021-03-18 14:26:17.450; - org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:3000
+ DEBUG main - 2021-03-18 14:26:17.514; - org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+ DEBUG main - 2021-03-18 14:26:17.518; - org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+ DEBUG main - 2021-03-18 14:26:17.520; - org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:17.523; - org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:17.524; - org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+ DEBUG main - 2021-03-18 14:26:17.527; - org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /posts HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:17.529; - org.apache.http.wire -  >> "GET /posts HTTP/1.1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.531; - org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.533; - org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.534; - org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.535; - org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.537; - org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.537; - org.apache.http.wire -  >> "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.538; - org.apache.http.headers - >> GET /posts HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:17.539; - org.apache.http.headers - >> Accept: */*
+ DEBUG main - 2021-03-18 14:26:17.541; - org.apache.http.headers - >> Host: localhost:3000
+ DEBUG main - 2021-03-18 14:26:17.542; - org.apache.http.headers - >> Connection: Keep-Alive
+ DEBUG main - 2021-03-18 14:26:17.544; - org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)
+ DEBUG main - 2021-03-18 14:26:17.545; - org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+ DEBUG main - 2021-03-18 14:26:17.576; - org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.579; - org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.581; - org.apache.http.wire -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.581; - org.apache.http.wire -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.582; - org.apache.http.wire -  << "Cache-Control: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.584; - org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.585; - org.apache.http.wire -  << "Expires: -1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.586; - org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.587; - org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.590; - org.apache.http.wire -  << "Content-Length: 77[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.591; - org.apache.http.wire -  << "ETag: W/"4d-49G7XbVRP2NKipc5uj9Z4hcUq3Y"[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.592; - org.apache.http.wire -  << "Date: Thu, 18 Mar 2021 08:56:17 GMT[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.594; - org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.595; - org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.597; - org.apache.http.wire -  << "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.600; - org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:17.601; - org.apache.http.headers - << HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:17.602; - org.apache.http.headers - << X-Powered-By: Express
+ DEBUG main - 2021-03-18 14:26:17.604; - org.apache.http.headers - << Vary: Origin, Accept-Encoding
+ DEBUG main - 2021-03-18 14:26:17.606; - org.apache.http.headers - << Access-Control-Allow-Credentials: true
+ DEBUG main - 2021-03-18 14:26:17.607; - org.apache.http.headers - << Cache-Control: no-cache
+ DEBUG main - 2021-03-18 14:26:17.608; - org.apache.http.headers - << Pragma: no-cache
+ DEBUG main - 2021-03-18 14:26:17.610; - org.apache.http.headers - << Expires: -1
+ DEBUG main - 2021-03-18 14:26:17.611; - org.apache.http.headers - << X-Content-Type-Options: nosniff
+ DEBUG main - 2021-03-18 14:26:17.612; - org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:17.613; - org.apache.http.headers - << Content-Length: 77
+ DEBUG main - 2021-03-18 14:26:17.616; - org.apache.http.headers - << ETag: W/"4d-49G7XbVRP2NKipc5uj9Z4hcUq3Y"
+ DEBUG main - 2021-03-18 14:26:17.617; - org.apache.http.headers - << Date: Thu, 18 Mar 2021 08:56:17 GMT
+ DEBUG main - 2021-03-18 14:26:17.619; - org.apache.http.headers - << Connection: keep-alive
+ DEBUG main - 2021-03-18 14:26:17.620; - org.apache.http.headers - << Keep-Alive: timeout=5
+ DEBUG main - 2021-03-18 14:26:17.633; - org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+ DEBUG main - 2021-03-18 14:26:17.669; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:17.672; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+ DEBUG main - 2021-03-18 14:26:17.719; - org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+ DEBUG main - 2021-03-18 14:26:17.719; - org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:3000
+ DEBUG main - 2021-03-18 14:26:17.721; - org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+ DEBUG main - 2021-03-18 14:26:17.722; - org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+ DEBUG main - 2021-03-18 14:26:17.722; - org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:17.723; - org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:17.723; - org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+ DEBUG main - 2021-03-18 14:26:17.724; - org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /posts HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:17.724; - org.apache.http.wire -  >> "GET /posts HTTP/1.1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.725; - org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.725; - org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.726; - org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.726; - org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.727; - org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.727; - org.apache.http.wire -  >> "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.728; - org.apache.http.headers - >> GET /posts HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:17.728; - org.apache.http.headers - >> Accept: */*
+ DEBUG main - 2021-03-18 14:26:17.728; - org.apache.http.headers - >> Host: localhost:3000
+ DEBUG main - 2021-03-18 14:26:17.729; - org.apache.http.headers - >> Connection: Keep-Alive
+ DEBUG main - 2021-03-18 14:26:17.729; - org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)
+ DEBUG main - 2021-03-18 14:26:17.730; - org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+ DEBUG main - 2021-03-18 14:26:17.748; - org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.749; - org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.750; - org.apache.http.wire -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.751; - org.apache.http.wire -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.751; - org.apache.http.wire -  << "Cache-Control: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.752; - org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.752; - org.apache.http.wire -  << "Expires: -1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.753; - org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.754; - org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.754; - org.apache.http.wire -  << "Content-Length: 77[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.755; - org.apache.http.wire -  << "ETag: W/"4d-49G7XbVRP2NKipc5uj9Z4hcUq3Y"[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.756; - org.apache.http.wire -  << "Date: Thu, 18 Mar 2021 08:56:17 GMT[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.756; - org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.758; - org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.758; - org.apache.http.wire -  << "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.759; - org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:17.759; - org.apache.http.headers - << HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:17.759; - org.apache.http.headers - << X-Powered-By: Express
+ DEBUG main - 2021-03-18 14:26:17.761; - org.apache.http.headers - << Vary: Origin, Accept-Encoding
+ DEBUG main - 2021-03-18 14:26:17.761; - org.apache.http.headers - << Access-Control-Allow-Credentials: true
+ DEBUG main - 2021-03-18 14:26:17.762; - org.apache.http.headers - << Cache-Control: no-cache
+ DEBUG main - 2021-03-18 14:26:17.762; - org.apache.http.headers - << Pragma: no-cache
+ DEBUG main - 2021-03-18 14:26:17.763; - org.apache.http.headers - << Expires: -1
+ DEBUG main - 2021-03-18 14:26:17.763; - org.apache.http.headers - << X-Content-Type-Options: nosniff
+ DEBUG main - 2021-03-18 14:26:17.764; - org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:17.764; - org.apache.http.headers - << Content-Length: 77
+ DEBUG main - 2021-03-18 14:26:17.765; - org.apache.http.headers - << ETag: W/"4d-49G7XbVRP2NKipc5uj9Z4hcUq3Y"
+ DEBUG main - 2021-03-18 14:26:17.766; - org.apache.http.headers - << Date: Thu, 18 Mar 2021 08:56:17 GMT
+ DEBUG main - 2021-03-18 14:26:17.766; - org.apache.http.headers - << Connection: keep-alive
+ DEBUG main - 2021-03-18 14:26:17.766; - org.apache.http.headers - << Keep-Alive: timeout=5
+ DEBUG main - 2021-03-18 14:26:17.767; - org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+ DEBUG main - 2021-03-18 14:26:17.768; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:17.769; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+ INFO main - 2021-03-18 14:26:17.793; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 14:26:17.793; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/comments
+ DEBUG main - 2021-03-18 14:26:17.809; - org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+ DEBUG main - 2021-03-18 14:26:17.811; - org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:3000
+ DEBUG Finalizer - 2021-03-18 14:26:17.811; - org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:61030<->127.0.0.1:3000 closed
+ DEBUG main - 2021-03-18 14:26:17.813; - org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+ DEBUG main - 2021-03-18 14:26:17.813; - org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+ DEBUG main - 2021-03-18 14:26:17.815; - org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:17.815; - org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:17.816; - org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+ DEBUG main - 2021-03-18 14:26:17.816; - org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /comments HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:17.817; - org.apache.http.wire -  >> "GET /comments HTTP/1.1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.818; - org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.818; - org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.819; - org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.819; - org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.820; - org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.821; - org.apache.http.wire -  >> "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.821; - org.apache.http.headers - >> GET /comments HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:17.822; - org.apache.http.headers - >> Accept: */*
+ DEBUG main - 2021-03-18 14:26:17.822; - org.apache.http.headers - >> Host: localhost:3000
+ DEBUG main - 2021-03-18 14:26:17.823; - org.apache.http.headers - >> Connection: Keep-Alive
+ DEBUG main - 2021-03-18 14:26:17.823; - org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)
+ DEBUG main - 2021-03-18 14:26:17.824; - org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+ DEBUG main - 2021-03-18 14:26:17.838; - org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.839; - org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.840; - org.apache.http.wire -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.840; - org.apache.http.wire -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.840; - org.apache.http.wire -  << "Cache-Control: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.841; - org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.841; - org.apache.http.wire -  << "Expires: -1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.842; - org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.842; - org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.843; - org.apache.http.wire -  << "Content-Length: 68[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.843; - org.apache.http.wire -  << "ETag: W/"44-AhZzXbkmpq/9WjXR6201BHgCRws"[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.844; - org.apache.http.wire -  << "Date: Thu, 18 Mar 2021 08:56:17 GMT[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.844; - org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.844; - org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.845; - org.apache.http.wire -  << "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.845; - org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:17.846; - org.apache.http.headers - << HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:17.846; - org.apache.http.headers - << X-Powered-By: Express
+ DEBUG main - 2021-03-18 14:26:17.847; - org.apache.http.headers - << Vary: Origin, Accept-Encoding
+ DEBUG main - 2021-03-18 14:26:17.847; - org.apache.http.headers - << Access-Control-Allow-Credentials: true
+ DEBUG main - 2021-03-18 14:26:17.847; - org.apache.http.headers - << Cache-Control: no-cache
+ DEBUG main - 2021-03-18 14:26:17.848; - org.apache.http.headers - << Pragma: no-cache
+ DEBUG main - 2021-03-18 14:26:17.848; - org.apache.http.headers - << Expires: -1
+ DEBUG main - 2021-03-18 14:26:17.849; - org.apache.http.headers - << X-Content-Type-Options: nosniff
+ DEBUG main - 2021-03-18 14:26:17.849; - org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:17.849; - org.apache.http.headers - << Content-Length: 68
+ DEBUG main - 2021-03-18 14:26:17.850; - org.apache.http.headers - << ETag: W/"44-AhZzXbkmpq/9WjXR6201BHgCRws"
+ DEBUG main - 2021-03-18 14:26:17.850; - org.apache.http.headers - << Date: Thu, 18 Mar 2021 08:56:17 GMT
+ DEBUG main - 2021-03-18 14:26:17.850; - org.apache.http.headers - << Connection: keep-alive
+ DEBUG main - 2021-03-18 14:26:17.851; - org.apache.http.headers - << Keep-Alive: timeout=5
+ DEBUG main - 2021-03-18 14:26:17.851; - org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+ DEBUG main - 2021-03-18 14:26:17.852; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:17.852; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+ DEBUG main - 2021-03-18 14:26:17.895; - org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+ DEBUG main - 2021-03-18 14:26:17.896; - org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:3000
+ DEBUG main - 2021-03-18 14:26:17.897; - org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+ DEBUG main - 2021-03-18 14:26:17.898; - org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+ DEBUG main - 2021-03-18 14:26:17.898; - org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:17.899; - org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:17.899; - org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+ DEBUG main - 2021-03-18 14:26:17.900; - org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /comments HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:17.900; - org.apache.http.wire -  >> "GET /comments HTTP/1.1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.901; - org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.902; - org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.902; - org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.903; - org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.903; - org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.903; - org.apache.http.wire -  >> "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.903; - org.apache.http.headers - >> GET /comments HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:17.904; - org.apache.http.headers - >> Accept: */*
+ DEBUG main - 2021-03-18 14:26:17.904; - org.apache.http.headers - >> Host: localhost:3000
+ DEBUG main - 2021-03-18 14:26:17.904; - org.apache.http.headers - >> Connection: Keep-Alive
+ DEBUG main - 2021-03-18 14:26:17.905; - org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)
+ DEBUG main - 2021-03-18 14:26:17.905; - org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+ DEBUG main - 2021-03-18 14:26:17.913; - org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.914; - org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.915; - org.apache.http.wire -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.916; - org.apache.http.wire -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.916; - org.apache.http.wire -  << "Cache-Control: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.917; - org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.917; - org.apache.http.wire -  << "Expires: -1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.918; - org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.919; - org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.919; - org.apache.http.wire -  << "Content-Length: 68[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.921; - org.apache.http.wire -  << "ETag: W/"44-AhZzXbkmpq/9WjXR6201BHgCRws"[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.921; - org.apache.http.wire -  << "Date: Thu, 18 Mar 2021 08:56:17 GMT[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.921; - org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.923; - org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.923; - org.apache.http.wire -  << "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.924; - org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:17.924; - org.apache.http.headers - << HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:17.924; - org.apache.http.headers - << X-Powered-By: Express
+ DEBUG main - 2021-03-18 14:26:17.925; - org.apache.http.headers - << Vary: Origin, Accept-Encoding
+ DEBUG main - 2021-03-18 14:26:17.925; - org.apache.http.headers - << Access-Control-Allow-Credentials: true
+ DEBUG main - 2021-03-18 14:26:17.925; - org.apache.http.headers - << Cache-Control: no-cache
+ DEBUG main - 2021-03-18 14:26:17.926; - org.apache.http.headers - << Pragma: no-cache
+ DEBUG main - 2021-03-18 14:26:17.926; - org.apache.http.headers - << Expires: -1
+ DEBUG main - 2021-03-18 14:26:17.927; - org.apache.http.headers - << X-Content-Type-Options: nosniff
+ DEBUG main - 2021-03-18 14:26:17.927; - org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:17.927; - org.apache.http.headers - << Content-Length: 68
+ DEBUG main - 2021-03-18 14:26:17.927; - org.apache.http.headers - << ETag: W/"44-AhZzXbkmpq/9WjXR6201BHgCRws"
+ DEBUG main - 2021-03-18 14:26:17.928; - org.apache.http.headers - << Date: Thu, 18 Mar 2021 08:56:17 GMT
+ DEBUG main - 2021-03-18 14:26:17.928; - org.apache.http.headers - << Connection: keep-alive
+ DEBUG main - 2021-03-18 14:26:17.928; - org.apache.http.headers - << Keep-Alive: timeout=5
+ DEBUG main - 2021-03-18 14:26:17.929; - org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+ DEBUG main - 2021-03-18 14:26:17.929; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:17.930; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+ INFO main - 2021-03-18 14:26:17.936; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 14:26:17.937; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/profile
+ DEBUG main - 2021-03-18 14:26:17.943; - org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+ DEBUG main - 2021-03-18 14:26:17.944; - org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:3000
+ DEBUG main - 2021-03-18 14:26:17.945; - org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+ DEBUG main - 2021-03-18 14:26:17.946; - org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+ DEBUG main - 2021-03-18 14:26:17.946; - org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:17.947; - org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:17.947; - org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+ DEBUG main - 2021-03-18 14:26:17.948; - org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /profile HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:17.949; - org.apache.http.wire -  >> "GET /profile HTTP/1.1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.949; - org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.950; - org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.950; - org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.951; - org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.951; - org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.951; - org.apache.http.wire -  >> "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.952; - org.apache.http.headers - >> GET /profile HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:17.952; - org.apache.http.headers - >> Accept: */*
+ DEBUG main - 2021-03-18 14:26:17.953; - org.apache.http.headers - >> Host: localhost:3000
+ DEBUG main - 2021-03-18 14:26:17.953; - org.apache.http.headers - >> Connection: Keep-Alive
+ DEBUG main - 2021-03-18 14:26:17.953; - org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)
+ DEBUG main - 2021-03-18 14:26:17.954; - org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+ DEBUG main - 2021-03-18 14:26:17.972; - org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.974; - org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.974; - org.apache.http.wire -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.975; - org.apache.http.wire -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.976; - org.apache.http.wire -  << "Cache-Control: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.977; - org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.977; - org.apache.http.wire -  << "Expires: -1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.978; - org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.978; - org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.979; - org.apache.http.wire -  << "Content-Length: 24[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.980; - org.apache.http.wire -  << "ETag: W/"18-Qpqe/zXE3gxE/bZh0bDeyDPhWok"[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.980; - org.apache.http.wire -  << "Date: Thu, 18 Mar 2021 08:56:17 GMT[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.981; - org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.982; - org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.982; - org.apache.http.wire -  << "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:17.984; - org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:17.985; - org.apache.http.headers - << HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:17.986; - org.apache.http.headers - << X-Powered-By: Express
+ DEBUG main - 2021-03-18 14:26:17.986; - org.apache.http.headers - << Vary: Origin, Accept-Encoding
+ DEBUG main - 2021-03-18 14:26:17.987; - org.apache.http.headers - << Access-Control-Allow-Credentials: true
+ DEBUG main - 2021-03-18 14:26:17.988; - org.apache.http.headers - << Cache-Control: no-cache
+ DEBUG main - 2021-03-18 14:26:17.989; - org.apache.http.headers - << Pragma: no-cache
+ DEBUG main - 2021-03-18 14:26:17.989; - org.apache.http.headers - << Expires: -1
+ DEBUG main - 2021-03-18 14:26:17.990; - org.apache.http.headers - << X-Content-Type-Options: nosniff
+ DEBUG main - 2021-03-18 14:26:17.991; - org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:17.992; - org.apache.http.headers - << Content-Length: 24
+ DEBUG main - 2021-03-18 14:26:17.993; - org.apache.http.headers - << ETag: W/"18-Qpqe/zXE3gxE/bZh0bDeyDPhWok"
+ DEBUG main - 2021-03-18 14:26:17.994; - org.apache.http.headers - << Date: Thu, 18 Mar 2021 08:56:17 GMT
+ DEBUG main - 2021-03-18 14:26:17.995; - org.apache.http.headers - << Connection: keep-alive
+ DEBUG main - 2021-03-18 14:26:17.995; - org.apache.http.headers - << Keep-Alive: timeout=5
+ DEBUG main - 2021-03-18 14:26:17.996; - org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+ DEBUG main - 2021-03-18 14:26:17.998; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:17.999; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+ DEBUG main - 2021-03-18 14:26:18.023; - org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.023; - org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.027; - org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+ DEBUG main - 2021-03-18 14:26:18.028; - org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+ DEBUG main - 2021-03-18 14:26:18.029; - org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:18.030; - org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:18.031; - org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+ DEBUG main - 2021-03-18 14:26:18.031; - org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /profile HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:18.032; - org.apache.http.wire -  >> "GET /profile HTTP/1.1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.032; - org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.033; - org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.033; - org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.034; - org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.035; - org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.036; - org.apache.http.wire -  >> "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.036; - org.apache.http.headers - >> GET /profile HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:18.037; - org.apache.http.headers - >> Accept: */*
+ DEBUG main - 2021-03-18 14:26:18.038; - org.apache.http.headers - >> Host: localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.038; - org.apache.http.headers - >> Connection: Keep-Alive
+ DEBUG main - 2021-03-18 14:26:18.039; - org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)
+ DEBUG main - 2021-03-18 14:26:18.039; - org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+ DEBUG main - 2021-03-18 14:26:18.065; - org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.066; - org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.066; - org.apache.http.wire -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.068; - org.apache.http.wire -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.069; - org.apache.http.wire -  << "Cache-Control: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.070; - org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.071; - org.apache.http.wire -  << "Expires: -1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.071; - org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.072; - org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.073; - org.apache.http.wire -  << "Content-Length: 24[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.075; - org.apache.http.wire -  << "ETag: W/"18-Qpqe/zXE3gxE/bZh0bDeyDPhWok"[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.076; - org.apache.http.wire -  << "Date: Thu, 18 Mar 2021 08:56:18 GMT[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.076; - org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.076; - org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.078; - org.apache.http.wire -  << "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.078; - org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:18.079; - org.apache.http.headers - << HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:18.080; - org.apache.http.headers - << X-Powered-By: Express
+ DEBUG main - 2021-03-18 14:26:18.080; - org.apache.http.headers - << Vary: Origin, Accept-Encoding
+ DEBUG main - 2021-03-18 14:26:18.081; - org.apache.http.headers - << Access-Control-Allow-Credentials: true
+ DEBUG main - 2021-03-18 14:26:18.081; - org.apache.http.headers - << Cache-Control: no-cache
+ DEBUG main - 2021-03-18 14:26:18.082; - org.apache.http.headers - << Pragma: no-cache
+ DEBUG main - 2021-03-18 14:26:18.083; - org.apache.http.headers - << Expires: -1
+ DEBUG main - 2021-03-18 14:26:18.083; - org.apache.http.headers - << X-Content-Type-Options: nosniff
+ DEBUG main - 2021-03-18 14:26:18.084; - org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:18.084; - org.apache.http.headers - << Content-Length: 24
+ DEBUG main - 2021-03-18 14:26:18.085; - org.apache.http.headers - << ETag: W/"18-Qpqe/zXE3gxE/bZh0bDeyDPhWok"
+ DEBUG main - 2021-03-18 14:26:18.086; - org.apache.http.headers - << Date: Thu, 18 Mar 2021 08:56:18 GMT
+ DEBUG main - 2021-03-18 14:26:18.087; - org.apache.http.headers - << Connection: keep-alive
+ DEBUG main - 2021-03-18 14:26:18.088; - org.apache.http.headers - << Keep-Alive: timeout=5
+ DEBUG main - 2021-03-18 14:26:18.089; - org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+ DEBUG main - 2021-03-18 14:26:18.092; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:18.092; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+ INFO main - 2021-03-18 14:26:18.110; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 14:26:18.111; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/posts
+ DEBUG main - 2021-03-18 14:26:18.123; - org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.124; - org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.127; - org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+ DEBUG main - 2021-03-18 14:26:18.127; - org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+ DEBUG main - 2021-03-18 14:26:18.129; - org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:18.129; - org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:18.132; - org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+ DEBUG main - 2021-03-18 14:26:18.133; - org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /posts HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:18.134; - org.apache.http.wire -  >> "GET /posts HTTP/1.1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.134; - org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.135; - org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.136; - org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.137; - org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.138; - org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.138; - org.apache.http.wire -  >> "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.139; - org.apache.http.headers - >> GET /posts HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:18.140; - org.apache.http.headers - >> Accept: */*
+ DEBUG main - 2021-03-18 14:26:18.141; - org.apache.http.headers - >> Host: localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.141; - org.apache.http.headers - >> Connection: Keep-Alive
+ DEBUG main - 2021-03-18 14:26:18.142; - org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)
+ DEBUG main - 2021-03-18 14:26:18.142; - org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+ DEBUG main - 2021-03-18 14:26:18.187; - org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.188; - org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.188; - org.apache.http.wire -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.189; - org.apache.http.wire -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.189; - org.apache.http.wire -  << "Cache-Control: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.190; - org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.190; - org.apache.http.wire -  << "Expires: -1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.191; - org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.191; - org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.192; - org.apache.http.wire -  << "Content-Length: 77[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.193; - org.apache.http.wire -  << "ETag: W/"4d-49G7XbVRP2NKipc5uj9Z4hcUq3Y"[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.194; - org.apache.http.wire -  << "Date: Thu, 18 Mar 2021 08:56:18 GMT[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.195; - org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.196; - org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.197; - org.apache.http.wire -  << "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.197; - org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:18.198; - org.apache.http.headers - << HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:18.199; - org.apache.http.headers - << X-Powered-By: Express
+ DEBUG main - 2021-03-18 14:26:18.199; - org.apache.http.headers - << Vary: Origin, Accept-Encoding
+ DEBUG main - 2021-03-18 14:26:18.200; - org.apache.http.headers - << Access-Control-Allow-Credentials: true
+ DEBUG main - 2021-03-18 14:26:18.200; - org.apache.http.headers - << Cache-Control: no-cache
+ DEBUG main - 2021-03-18 14:26:18.201; - org.apache.http.headers - << Pragma: no-cache
+ DEBUG main - 2021-03-18 14:26:18.201; - org.apache.http.headers - << Expires: -1
+ DEBUG main - 2021-03-18 14:26:18.201; - org.apache.http.headers - << X-Content-Type-Options: nosniff
+ DEBUG main - 2021-03-18 14:26:18.202; - org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:18.202; - org.apache.http.headers - << Content-Length: 77
+ DEBUG main - 2021-03-18 14:26:18.203; - org.apache.http.headers - << ETag: W/"4d-49G7XbVRP2NKipc5uj9Z4hcUq3Y"
+ DEBUG main - 2021-03-18 14:26:18.204; - org.apache.http.headers - << Date: Thu, 18 Mar 2021 08:56:18 GMT
+ DEBUG main - 2021-03-18 14:26:18.204; - org.apache.http.headers - << Connection: keep-alive
+ DEBUG main - 2021-03-18 14:26:18.205; - org.apache.http.headers - << Keep-Alive: timeout=5
+ DEBUG Finalizer - 2021-03-18 14:26:18.210; - org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:61034<->127.0.0.1:3000 closed
+ DEBUG main - 2021-03-18 14:26:18.211; - org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+ DEBUG Finalizer - 2021-03-18 14:26:18.212; - org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:61033<->127.0.0.1:3000 closed
+ DEBUG main - 2021-03-18 14:26:18.213; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:18.213; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+ DEBUG Finalizer - 2021-03-18 14:26:18.213; - org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:61032<->127.0.0.1:3000 closed
+ DEBUG Finalizer - 2021-03-18 14:26:18.215; - org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:61031<->127.0.0.1:3000 closed
+ DEBUG main - 2021-03-18 14:26:18.230; - org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.232; - org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.234; - org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+ DEBUG main - 2021-03-18 14:26:18.235; - org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+ DEBUG main - 2021-03-18 14:26:18.236; - org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:18.236; - org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:18.236; - org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+ DEBUG main - 2021-03-18 14:26:18.238; - org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /posts HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:18.238; - org.apache.http.wire -  >> "GET /posts HTTP/1.1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.239; - org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.240; - org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.240; - org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.241; - org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.242; - org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.242; - org.apache.http.wire -  >> "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.243; - org.apache.http.headers - >> GET /posts HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:18.243; - org.apache.http.headers - >> Accept: */*
+ DEBUG main - 2021-03-18 14:26:18.244; - org.apache.http.headers - >> Host: localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.244; - org.apache.http.headers - >> Connection: Keep-Alive
+ DEBUG main - 2021-03-18 14:26:18.245; - org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)
+ DEBUG main - 2021-03-18 14:26:18.245; - org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+ DEBUG main - 2021-03-18 14:26:18.272; - org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.272; - org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.273; - org.apache.http.wire -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.274; - org.apache.http.wire -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.275; - org.apache.http.wire -  << "Cache-Control: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.275; - org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.276; - org.apache.http.wire -  << "Expires: -1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.277; - org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.278; - org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.279; - org.apache.http.wire -  << "Content-Length: 77[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.279; - org.apache.http.wire -  << "ETag: W/"4d-49G7XbVRP2NKipc5uj9Z4hcUq3Y"[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.280; - org.apache.http.wire -  << "Date: Thu, 18 Mar 2021 08:56:18 GMT[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.281; - org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.281; - org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.281; - org.apache.http.wire -  << "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.283; - org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:18.283; - org.apache.http.headers - << HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:18.283; - org.apache.http.headers - << X-Powered-By: Express
+ DEBUG main - 2021-03-18 14:26:18.286; - org.apache.http.headers - << Vary: Origin, Accept-Encoding
+ DEBUG main - 2021-03-18 14:26:18.286; - org.apache.http.headers - << Access-Control-Allow-Credentials: true
+ DEBUG main - 2021-03-18 14:26:18.288; - org.apache.http.headers - << Cache-Control: no-cache
+ DEBUG main - 2021-03-18 14:26:18.288; - org.apache.http.headers - << Pragma: no-cache
+ DEBUG main - 2021-03-18 14:26:18.289; - org.apache.http.headers - << Expires: -1
+ DEBUG main - 2021-03-18 14:26:18.289; - org.apache.http.headers - << X-Content-Type-Options: nosniff
+ DEBUG main - 2021-03-18 14:26:18.290; - org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:18.290; - org.apache.http.headers - << Content-Length: 77
+ DEBUG main - 2021-03-18 14:26:18.292; - org.apache.http.headers - << ETag: W/"4d-49G7XbVRP2NKipc5uj9Z4hcUq3Y"
+ DEBUG main - 2021-03-18 14:26:18.292; - org.apache.http.headers - << Date: Thu, 18 Mar 2021 08:56:18 GMT
+ DEBUG main - 2021-03-18 14:26:18.293; - org.apache.http.headers - << Connection: keep-alive
+ DEBUG main - 2021-03-18 14:26:18.293; - org.apache.http.headers - << Keep-Alive: timeout=5
+ DEBUG main - 2021-03-18 14:26:18.294; - org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+ DEBUG main - 2021-03-18 14:26:18.295; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:18.296; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+ DEBUG main - 2021-03-18 14:26:18.307; - org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.307; - org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.315; - org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+ DEBUG main - 2021-03-18 14:26:18.316; - org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+ DEBUG main - 2021-03-18 14:26:18.317; - org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:18.319; - org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:18.320; - org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+ DEBUG main - 2021-03-18 14:26:18.320; - org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /posts HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:18.320; - org.apache.http.wire -  >> "GET /posts HTTP/1.1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.320; - org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.323; - org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.324; - org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.324; - org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.326; - org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.326; - org.apache.http.wire -  >> "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.327; - org.apache.http.headers - >> GET /posts HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:18.327; - org.apache.http.headers - >> Accept: */*
+ DEBUG main - 2021-03-18 14:26:18.327; - org.apache.http.headers - >> Host: localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.327; - org.apache.http.headers - >> Connection: Keep-Alive
+ DEBUG main - 2021-03-18 14:26:18.327; - org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)
+ DEBUG main - 2021-03-18 14:26:18.327; - org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+ DEBUG main - 2021-03-18 14:26:18.360; - org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.360; - org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.361; - org.apache.http.wire -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.361; - org.apache.http.wire -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.362; - org.apache.http.wire -  << "Cache-Control: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.362; - org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.363; - org.apache.http.wire -  << "Expires: -1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.363; - org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.364; - org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.364; - org.apache.http.wire -  << "Content-Length: 77[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.365; - org.apache.http.wire -  << "ETag: W/"4d-49G7XbVRP2NKipc5uj9Z4hcUq3Y"[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.365; - org.apache.http.wire -  << "Date: Thu, 18 Mar 2021 08:56:18 GMT[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.365; - org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.367; - org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.367; - org.apache.http.wire -  << "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.368; - org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:18.368; - org.apache.http.headers - << HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:18.368; - org.apache.http.headers - << X-Powered-By: Express
+ DEBUG main - 2021-03-18 14:26:18.369; - org.apache.http.headers - << Vary: Origin, Accept-Encoding
+ DEBUG main - 2021-03-18 14:26:18.369; - org.apache.http.headers - << Access-Control-Allow-Credentials: true
+ DEBUG main - 2021-03-18 14:26:18.369; - org.apache.http.headers - << Cache-Control: no-cache
+ DEBUG main - 2021-03-18 14:26:18.370; - org.apache.http.headers - << Pragma: no-cache
+ DEBUG main - 2021-03-18 14:26:18.370; - org.apache.http.headers - << Expires: -1
+ DEBUG main - 2021-03-18 14:26:18.370; - org.apache.http.headers - << X-Content-Type-Options: nosniff
+ DEBUG main - 2021-03-18 14:26:18.371; - org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:18.371; - org.apache.http.headers - << Content-Length: 77
+ DEBUG main - 2021-03-18 14:26:18.371; - org.apache.http.headers - << ETag: W/"4d-49G7XbVRP2NKipc5uj9Z4hcUq3Y"
+ DEBUG main - 2021-03-18 14:26:18.372; - org.apache.http.headers - << Date: Thu, 18 Mar 2021 08:56:18 GMT
+ DEBUG main - 2021-03-18 14:26:18.372; - org.apache.http.headers - << Connection: keep-alive
+ DEBUG main - 2021-03-18 14:26:18.372; - org.apache.http.headers - << Keep-Alive: timeout=5
+ DEBUG main - 2021-03-18 14:26:18.373; - org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+ DEBUG main - 2021-03-18 14:26:18.374; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:18.374; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+ INFO main - 2021-03-18 14:26:18.375; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@23b3aa8c
+ DEBUG main - 2021-03-18 14:26:18.397; - org.apache.http.wire -  << "[[\n]"
+ DEBUG main - 2021-03-18 14:26:18.397; - org.apache.http.wire -  << "  {[\n]"
+ DEBUG main - 2021-03-18 14:26:18.398; - org.apache.http.wire -  << "    "id": 1,[\n]"
+ DEBUG main - 2021-03-18 14:26:18.398; - org.apache.http.wire -  << "    "title": "json-server",[\n]"
+ DEBUG main - 2021-03-18 14:26:18.398; - org.apache.http.wire -  << "    "author": "typicode"[\n]"
+ DEBUG main - 2021-03-18 14:26:18.399; - org.apache.http.wire -  << "  }[\n]"
+ DEBUG main - 2021-03-18 14:26:18.399; - org.apache.http.wire -  << "]"
+ DEBUG main - 2021-03-18 14:26:18.400; - org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@45f421c
+ DEBUG main - 2021-03-18 14:26:18.401; - org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive for 5000 MILLISECONDS
+ INFO main - 2021-03-18 14:26:18.403; - baseSteps.BaseSteps - Response in String format is:[
+  {
+    "id": 1,
+    "title": "json-server",
+    "author": "typicode"
+  }
+]
+ INFO main - 2021-03-18 14:26:18.406; - baseSteps.BaseSteps - Response in JSON format is:io.restassured.path.json.JsonPath@396e6d9
+ INFO main - 2021-03-18 14:26:18.412; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 14:26:18.412; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/comments
+ DEBUG main - 2021-03-18 14:26:18.424; - org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.425; - org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.427; - org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+ DEBUG main - 2021-03-18 14:26:18.427; - org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+ DEBUG main - 2021-03-18 14:26:18.428; - org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:18.429; - org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:18.429; - org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+ DEBUG main - 2021-03-18 14:26:18.430; - org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /comments HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:18.430; - org.apache.http.wire -  >> "GET /comments HTTP/1.1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.431; - org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.431; - org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.433; - org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.433; - org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.434; - org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.434; - org.apache.http.wire -  >> "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.434; - org.apache.http.headers - >> GET /comments HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:18.436; - org.apache.http.headers - >> Accept: */*
+ DEBUG main - 2021-03-18 14:26:18.436; - org.apache.http.headers - >> Host: localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.437; - org.apache.http.headers - >> Connection: Keep-Alive
+ DEBUG main - 2021-03-18 14:26:18.438; - org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)
+ DEBUG main - 2021-03-18 14:26:18.438; - org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+ DEBUG main - 2021-03-18 14:26:18.453; - org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.455; - org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.455; - org.apache.http.wire -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.455; - org.apache.http.wire -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.456; - org.apache.http.wire -  << "Cache-Control: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.456; - org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.457; - org.apache.http.wire -  << "Expires: -1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.457; - org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.458; - org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.458; - org.apache.http.wire -  << "Content-Length: 68[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.458; - org.apache.http.wire -  << "ETag: W/"44-AhZzXbkmpq/9WjXR6201BHgCRws"[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.459; - org.apache.http.wire -  << "Date: Thu, 18 Mar 2021 08:56:18 GMT[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.459; - org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.460; - org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.460; - org.apache.http.wire -  << "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.461; - org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:18.461; - org.apache.http.headers - << HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:18.461; - org.apache.http.headers - << X-Powered-By: Express
+ DEBUG main - 2021-03-18 14:26:18.462; - org.apache.http.headers - << Vary: Origin, Accept-Encoding
+ DEBUG main - 2021-03-18 14:26:18.462; - org.apache.http.headers - << Access-Control-Allow-Credentials: true
+ DEBUG main - 2021-03-18 14:26:18.462; - org.apache.http.headers - << Cache-Control: no-cache
+ DEBUG main - 2021-03-18 14:26:18.463; - org.apache.http.headers - << Pragma: no-cache
+ DEBUG main - 2021-03-18 14:26:18.463; - org.apache.http.headers - << Expires: -1
+ DEBUG main - 2021-03-18 14:26:18.463; - org.apache.http.headers - << X-Content-Type-Options: nosniff
+ DEBUG main - 2021-03-18 14:26:18.464; - org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:18.464; - org.apache.http.headers - << Content-Length: 68
+ DEBUG main - 2021-03-18 14:26:18.465; - org.apache.http.headers - << ETag: W/"44-AhZzXbkmpq/9WjXR6201BHgCRws"
+ DEBUG main - 2021-03-18 14:26:18.465; - org.apache.http.headers - << Date: Thu, 18 Mar 2021 08:56:18 GMT
+ DEBUG main - 2021-03-18 14:26:18.465; - org.apache.http.headers - << Connection: keep-alive
+ DEBUG main - 2021-03-18 14:26:18.466; - org.apache.http.headers - << Keep-Alive: timeout=5
+ DEBUG main - 2021-03-18 14:26:18.466; - org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+ DEBUG main - 2021-03-18 14:26:18.467; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:18.467; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+ DEBUG main - 2021-03-18 14:26:18.478; - org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.479; - org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.480; - org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+ DEBUG main - 2021-03-18 14:26:18.480; - org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+ DEBUG main - 2021-03-18 14:26:18.481; - org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:18.481; - org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:18.481; - org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+ DEBUG main - 2021-03-18 14:26:18.482; - org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /comments HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:18.482; - org.apache.http.wire -  >> "GET /comments HTTP/1.1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.483; - org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.483; - org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.483; - org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.484; - org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.484; - org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.485; - org.apache.http.wire -  >> "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.485; - org.apache.http.headers - >> GET /comments HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:18.485; - org.apache.http.headers - >> Accept: */*
+ DEBUG main - 2021-03-18 14:26:18.485; - org.apache.http.headers - >> Host: localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.486; - org.apache.http.headers - >> Connection: Keep-Alive
+ DEBUG main - 2021-03-18 14:26:18.486; - org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)
+ DEBUG main - 2021-03-18 14:26:18.487; - org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+ DEBUG main - 2021-03-18 14:26:18.514; - org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.515; - org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.515; - org.apache.http.wire -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.516; - org.apache.http.wire -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.516; - org.apache.http.wire -  << "Cache-Control: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.517; - org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.517; - org.apache.http.wire -  << "Expires: -1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.518; - org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.518; - org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.519; - org.apache.http.wire -  << "Content-Length: 68[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.519; - org.apache.http.wire -  << "ETag: W/"44-AhZzXbkmpq/9WjXR6201BHgCRws"[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.520; - org.apache.http.wire -  << "Date: Thu, 18 Mar 2021 08:56:18 GMT[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.520; - org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.521; - org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.521; - org.apache.http.wire -  << "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.521; - org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:18.522; - org.apache.http.headers - << HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:18.522; - org.apache.http.headers - << X-Powered-By: Express
+ DEBUG main - 2021-03-18 14:26:18.523; - org.apache.http.headers - << Vary: Origin, Accept-Encoding
+ DEBUG main - 2021-03-18 14:26:18.523; - org.apache.http.headers - << Access-Control-Allow-Credentials: true
+ DEBUG main - 2021-03-18 14:26:18.524; - org.apache.http.headers - << Cache-Control: no-cache
+ DEBUG main - 2021-03-18 14:26:18.524; - org.apache.http.headers - << Pragma: no-cache
+ DEBUG main - 2021-03-18 14:26:18.524; - org.apache.http.headers - << Expires: -1
+ DEBUG main - 2021-03-18 14:26:18.524; - org.apache.http.headers - << X-Content-Type-Options: nosniff
+ DEBUG main - 2021-03-18 14:26:18.527; - org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:18.528; - org.apache.http.headers - << Content-Length: 68
+ DEBUG main - 2021-03-18 14:26:18.528; - org.apache.http.headers - << ETag: W/"44-AhZzXbkmpq/9WjXR6201BHgCRws"
+ DEBUG main - 2021-03-18 14:26:18.528; - org.apache.http.headers - << Date: Thu, 18 Mar 2021 08:56:18 GMT
+ DEBUG main - 2021-03-18 14:26:18.528; - org.apache.http.headers - << Connection: keep-alive
+ DEBUG main - 2021-03-18 14:26:18.529; - org.apache.http.headers - << Keep-Alive: timeout=5
+ DEBUG main - 2021-03-18 14:26:18.530; - org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+ DEBUG main - 2021-03-18 14:26:18.530; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:18.532; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+ DEBUG main - 2021-03-18 14:26:18.543; - org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.544; - org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.546; - org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+ DEBUG main - 2021-03-18 14:26:18.547; - org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+ DEBUG main - 2021-03-18 14:26:18.547; - org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:18.548; - org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:18.550; - org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+ DEBUG main - 2021-03-18 14:26:18.550; - org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /comments HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:18.551; - org.apache.http.wire -  >> "GET /comments HTTP/1.1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.551; - org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.552; - org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.552; - org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.553; - org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.554; - org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.554; - org.apache.http.wire -  >> "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.555; - org.apache.http.headers - >> GET /comments HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:18.555; - org.apache.http.headers - >> Accept: */*
+ DEBUG main - 2021-03-18 14:26:18.556; - org.apache.http.headers - >> Host: localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.556; - org.apache.http.headers - >> Connection: Keep-Alive
+ DEBUG main - 2021-03-18 14:26:18.558; - org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)
+ DEBUG main - 2021-03-18 14:26:18.559; - org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+ DEBUG main - 2021-03-18 14:26:18.579; - org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.580; - org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.580; - org.apache.http.wire -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.581; - org.apache.http.wire -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.581; - org.apache.http.wire -  << "Cache-Control: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.581; - org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.582; - org.apache.http.wire -  << "Expires: -1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.582; - org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.583; - org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.583; - org.apache.http.wire -  << "Content-Length: 68[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.583; - org.apache.http.wire -  << "ETag: W/"44-AhZzXbkmpq/9WjXR6201BHgCRws"[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.584; - org.apache.http.wire -  << "Date: Thu, 18 Mar 2021 08:56:18 GMT[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.584; - org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.585; - org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.585; - org.apache.http.wire -  << "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.586; - org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:18.586; - org.apache.http.headers - << HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:18.586; - org.apache.http.headers - << X-Powered-By: Express
+ DEBUG main - 2021-03-18 14:26:18.587; - org.apache.http.headers - << Vary: Origin, Accept-Encoding
+ DEBUG main - 2021-03-18 14:26:18.587; - org.apache.http.headers - << Access-Control-Allow-Credentials: true
+ DEBUG main - 2021-03-18 14:26:18.588; - org.apache.http.headers - << Cache-Control: no-cache
+ DEBUG main - 2021-03-18 14:26:18.588; - org.apache.http.headers - << Pragma: no-cache
+ DEBUG main - 2021-03-18 14:26:18.589; - org.apache.http.headers - << Expires: -1
+ DEBUG main - 2021-03-18 14:26:18.589; - org.apache.http.headers - << X-Content-Type-Options: nosniff
+ DEBUG main - 2021-03-18 14:26:18.590; - org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:18.590; - org.apache.http.headers - << Content-Length: 68
+ DEBUG main - 2021-03-18 14:26:18.590; - org.apache.http.headers - << ETag: W/"44-AhZzXbkmpq/9WjXR6201BHgCRws"
+ DEBUG main - 2021-03-18 14:26:18.591; - org.apache.http.headers - << Date: Thu, 18 Mar 2021 08:56:18 GMT
+ DEBUG main - 2021-03-18 14:26:18.591; - org.apache.http.headers - << Connection: keep-alive
+ DEBUG main - 2021-03-18 14:26:18.591; - org.apache.http.headers - << Keep-Alive: timeout=5
+ DEBUG main - 2021-03-18 14:26:18.592; - org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+ DEBUG main - 2021-03-18 14:26:18.592; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:18.593; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+ INFO main - 2021-03-18 14:26:18.594; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@23382f76
+ DEBUG main - 2021-03-18 14:26:18.594; - org.apache.http.wire -  << "[[\n]"
+ DEBUG main - 2021-03-18 14:26:18.595; - org.apache.http.wire -  << "  {[\n]"
+ DEBUG main - 2021-03-18 14:26:18.595; - org.apache.http.wire -  << "    "id": 1,[\n]"
+ DEBUG main - 2021-03-18 14:26:18.595; - org.apache.http.wire -  << "    "body": "some comment",[\n]"
+ DEBUG main - 2021-03-18 14:26:18.596; - org.apache.http.wire -  << "    "postId": 1[\n]"
+ DEBUG main - 2021-03-18 14:26:18.596; - org.apache.http.wire -  << "  }[\n]"
+ DEBUG main - 2021-03-18 14:26:18.596; - org.apache.http.wire -  << "]"
+ DEBUG main - 2021-03-18 14:26:18.597; - org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@68fe48d7
+ DEBUG main - 2021-03-18 14:26:18.597; - org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive for 5000 MILLISECONDS
+ INFO main - 2021-03-18 14:26:18.598; - baseSteps.BaseSteps - Response in String format is:[
+  {
+    "id": 1,
+    "body": "some comment",
+    "postId": 1
+  }
+]
+ INFO main - 2021-03-18 14:26:18.598; - baseSteps.BaseSteps - Response in JSON format is:io.restassured.path.json.JsonPath@27a97e08
+ INFO main - 2021-03-18 14:26:18.603; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 14:26:18.603; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/profile
+ DEBUG main - 2021-03-18 14:26:18.608; - org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.610; - org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.611; - org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+ DEBUG main - 2021-03-18 14:26:18.612; - org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+ DEBUG main - 2021-03-18 14:26:18.612; - org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:18.612; - org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:18.613; - org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+ DEBUG main - 2021-03-18 14:26:18.613; - org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /profile HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:18.613; - org.apache.http.wire -  >> "GET /profile HTTP/1.1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.614; - org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.615; - org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.615; - org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.615; - org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.616; - org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.616; - org.apache.http.wire -  >> "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.616; - org.apache.http.headers - >> GET /profile HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:18.617; - org.apache.http.headers - >> Accept: */*
+ DEBUG main - 2021-03-18 14:26:18.617; - org.apache.http.headers - >> Host: localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.618; - org.apache.http.headers - >> Connection: Keep-Alive
+ DEBUG main - 2021-03-18 14:26:18.618; - org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)
+ DEBUG main - 2021-03-18 14:26:18.619; - org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+ DEBUG main - 2021-03-18 14:26:18.644; - org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.645; - org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.645; - org.apache.http.wire -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.646; - org.apache.http.wire -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.646; - org.apache.http.wire -  << "Cache-Control: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.646; - org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.647; - org.apache.http.wire -  << "Expires: -1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.647; - org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.647; - org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.648; - org.apache.http.wire -  << "Content-Length: 24[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.648; - org.apache.http.wire -  << "ETag: W/"18-Qpqe/zXE3gxE/bZh0bDeyDPhWok"[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.648; - org.apache.http.wire -  << "Date: Thu, 18 Mar 2021 08:56:18 GMT[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.649; - org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.649; - org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.649; - org.apache.http.wire -  << "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.650; - org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:18.650; - org.apache.http.headers - << HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:18.651; - org.apache.http.headers - << X-Powered-By: Express
+ DEBUG main - 2021-03-18 14:26:18.651; - org.apache.http.headers - << Vary: Origin, Accept-Encoding
+ DEBUG main - 2021-03-18 14:26:18.652; - org.apache.http.headers - << Access-Control-Allow-Credentials: true
+ DEBUG main - 2021-03-18 14:26:18.652; - org.apache.http.headers - << Cache-Control: no-cache
+ DEBUG main - 2021-03-18 14:26:18.653; - org.apache.http.headers - << Pragma: no-cache
+ DEBUG main - 2021-03-18 14:26:18.653; - org.apache.http.headers - << Expires: -1
+ DEBUG main - 2021-03-18 14:26:18.653; - org.apache.http.headers - << X-Content-Type-Options: nosniff
+ DEBUG main - 2021-03-18 14:26:18.653; - org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:18.654; - org.apache.http.headers - << Content-Length: 24
+ DEBUG main - 2021-03-18 14:26:18.654; - org.apache.http.headers - << ETag: W/"18-Qpqe/zXE3gxE/bZh0bDeyDPhWok"
+ DEBUG main - 2021-03-18 14:26:18.654; - org.apache.http.headers - << Date: Thu, 18 Mar 2021 08:56:18 GMT
+ DEBUG main - 2021-03-18 14:26:18.654; - org.apache.http.headers - << Connection: keep-alive
+ DEBUG main - 2021-03-18 14:26:18.656; - org.apache.http.headers - << Keep-Alive: timeout=5
+ DEBUG main - 2021-03-18 14:26:18.656; - org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+ DEBUG main - 2021-03-18 14:26:18.657; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:18.658; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+ DEBUG main - 2021-03-18 14:26:18.668; - org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.669; - org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.670; - org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+ DEBUG main - 2021-03-18 14:26:18.671; - org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+ DEBUG main - 2021-03-18 14:26:18.671; - org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:18.672; - org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:18.672; - org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+ DEBUG main - 2021-03-18 14:26:18.673; - org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /profile HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:18.674; - org.apache.http.wire -  >> "GET /profile HTTP/1.1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.678; - org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.682; - org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+ DEBUG Finalizer - 2021-03-18 14:26:18.682; - org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:61038<->127.0.0.1:3000 closed
+ DEBUG main - 2021-03-18 14:26:18.682; - org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+ DEBUG Finalizer - 2021-03-18 14:26:18.684; - org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:61039<->127.0.0.1:3000 closed
+ DEBUG main - 2021-03-18 14:26:18.684; - org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)[\r][\n]"
+ DEBUG Finalizer - 2021-03-18 14:26:18.686; - org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:61040<->127.0.0.1:3000 closed
+ DEBUG main - 2021-03-18 14:26:18.686; - org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+ DEBUG Finalizer - 2021-03-18 14:26:18.688; - org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:61037<->127.0.0.1:3000 closed
+ DEBUG main - 2021-03-18 14:26:18.688; - org.apache.http.wire -  >> "[\r][\n]"
+ DEBUG Finalizer - 2021-03-18 14:26:18.689; - org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:61035<->127.0.0.1:3000 closed
+ DEBUG main - 2021-03-18 14:26:18.689; - org.apache.http.headers - >> GET /profile HTTP/1.1
+ DEBUG Finalizer - 2021-03-18 14:26:18.689; - org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:61036<->127.0.0.1:3000 closed
+ DEBUG main - 2021-03-18 14:26:18.690; - org.apache.http.headers - >> Accept: */*
+ DEBUG main - 2021-03-18 14:26:18.690; - org.apache.http.headers - >> Host: localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.691; - org.apache.http.headers - >> Connection: Keep-Alive
+ DEBUG main - 2021-03-18 14:26:18.691; - org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)
+ DEBUG main - 2021-03-18 14:26:18.691; - org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+ DEBUG main - 2021-03-18 14:26:18.704; - org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.705; - org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.705; - org.apache.http.wire -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.706; - org.apache.http.wire -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.706; - org.apache.http.wire -  << "Cache-Control: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.707; - org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.707; - org.apache.http.wire -  << "Expires: -1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.707; - org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.707; - org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.707; - org.apache.http.wire -  << "Content-Length: 24[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.708; - org.apache.http.wire -  << "ETag: W/"18-Qpqe/zXE3gxE/bZh0bDeyDPhWok"[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.709; - org.apache.http.wire -  << "Date: Thu, 18 Mar 2021 08:56:18 GMT[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.709; - org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.709; - org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.710; - org.apache.http.wire -  << "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.710; - org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:18.710; - org.apache.http.headers - << HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:18.711; - org.apache.http.headers - << X-Powered-By: Express
+ DEBUG main - 2021-03-18 14:26:18.711; - org.apache.http.headers - << Vary: Origin, Accept-Encoding
+ DEBUG main - 2021-03-18 14:26:18.711; - org.apache.http.headers - << Access-Control-Allow-Credentials: true
+ DEBUG main - 2021-03-18 14:26:18.711; - org.apache.http.headers - << Cache-Control: no-cache
+ DEBUG main - 2021-03-18 14:26:18.712; - org.apache.http.headers - << Pragma: no-cache
+ DEBUG main - 2021-03-18 14:26:18.712; - org.apache.http.headers - << Expires: -1
+ DEBUG main - 2021-03-18 14:26:18.712; - org.apache.http.headers - << X-Content-Type-Options: nosniff
+ DEBUG main - 2021-03-18 14:26:18.712; - org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:18.713; - org.apache.http.headers - << Content-Length: 24
+ DEBUG main - 2021-03-18 14:26:18.713; - org.apache.http.headers - << ETag: W/"18-Qpqe/zXE3gxE/bZh0bDeyDPhWok"
+ DEBUG main - 2021-03-18 14:26:18.713; - org.apache.http.headers - << Date: Thu, 18 Mar 2021 08:56:18 GMT
+ DEBUG main - 2021-03-18 14:26:18.714; - org.apache.http.headers - << Connection: keep-alive
+ DEBUG main - 2021-03-18 14:26:18.714; - org.apache.http.headers - << Keep-Alive: timeout=5
+ DEBUG main - 2021-03-18 14:26:18.714; - org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+ DEBUG main - 2021-03-18 14:26:18.715; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:18.715; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+ DEBUG main - 2021-03-18 14:26:18.724; - org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.725; - org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.727; - org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+ DEBUG main - 2021-03-18 14:26:18.727; - org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+ DEBUG main - 2021-03-18 14:26:18.728; - org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:18.728; - org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:18.729; - org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+ DEBUG main - 2021-03-18 14:26:18.729; - org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /profile HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:18.729; - org.apache.http.wire -  >> "GET /profile HTTP/1.1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.730; - org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.730; - org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.731; - org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.731; - org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.731; - org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.732; - org.apache.http.wire -  >> "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.732; - org.apache.http.headers - >> GET /profile HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:18.732; - org.apache.http.headers - >> Accept: */*
+ DEBUG main - 2021-03-18 14:26:18.733; - org.apache.http.headers - >> Host: localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.733; - org.apache.http.headers - >> Connection: Keep-Alive
+ DEBUG main - 2021-03-18 14:26:18.734; - org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)
+ DEBUG main - 2021-03-18 14:26:18.735; - org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+ DEBUG main - 2021-03-18 14:26:18.752; - org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.753; - org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.753; - org.apache.http.wire -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.753; - org.apache.http.wire -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.755; - org.apache.http.wire -  << "Cache-Control: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.756; - org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.757; - org.apache.http.wire -  << "Expires: -1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.757; - org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.757; - org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.758; - org.apache.http.wire -  << "Content-Length: 24[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.758; - org.apache.http.wire -  << "ETag: W/"18-Qpqe/zXE3gxE/bZh0bDeyDPhWok"[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.758; - org.apache.http.wire -  << "Date: Thu, 18 Mar 2021 08:56:18 GMT[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.758; - org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.759; - org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.759; - org.apache.http.wire -  << "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.760; - org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:18.760; - org.apache.http.headers - << HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:18.761; - org.apache.http.headers - << X-Powered-By: Express
+ DEBUG main - 2021-03-18 14:26:18.761; - org.apache.http.headers - << Vary: Origin, Accept-Encoding
+ DEBUG main - 2021-03-18 14:26:18.761; - org.apache.http.headers - << Access-Control-Allow-Credentials: true
+ DEBUG main - 2021-03-18 14:26:18.762; - org.apache.http.headers - << Cache-Control: no-cache
+ DEBUG main - 2021-03-18 14:26:18.762; - org.apache.http.headers - << Pragma: no-cache
+ DEBUG main - 2021-03-18 14:26:18.763; - org.apache.http.headers - << Expires: -1
+ DEBUG main - 2021-03-18 14:26:18.763; - org.apache.http.headers - << X-Content-Type-Options: nosniff
+ DEBUG main - 2021-03-18 14:26:18.764; - org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:18.764; - org.apache.http.headers - << Content-Length: 24
+ DEBUG main - 2021-03-18 14:26:18.765; - org.apache.http.headers - << ETag: W/"18-Qpqe/zXE3gxE/bZh0bDeyDPhWok"
+ DEBUG main - 2021-03-18 14:26:18.765; - org.apache.http.headers - << Date: Thu, 18 Mar 2021 08:56:18 GMT
+ DEBUG main - 2021-03-18 14:26:18.765; - org.apache.http.headers - << Connection: keep-alive
+ DEBUG main - 2021-03-18 14:26:18.766; - org.apache.http.headers - << Keep-Alive: timeout=5
+ DEBUG main - 2021-03-18 14:26:18.766; - org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+ DEBUG main - 2021-03-18 14:26:18.767; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:18.768; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+ INFO main - 2021-03-18 14:26:18.769; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@2cc03cd1
+ DEBUG main - 2021-03-18 14:26:18.769; - org.apache.http.wire -  << "{[\n]"
+ DEBUG main - 2021-03-18 14:26:18.770; - org.apache.http.wire -  << "  "name": "typicode"[\n]"
+ DEBUG main - 2021-03-18 14:26:18.770; - org.apache.http.wire -  << "}"
+ DEBUG main - 2021-03-18 14:26:18.770; - org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3b9632d1
+ DEBUG main - 2021-03-18 14:26:18.770; - org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive for 5000 MILLISECONDS
+ INFO main - 2021-03-18 14:26:18.771; - baseSteps.BaseSteps - Response in String format is:{
+  "name": "typicode"
+}
+ INFO main - 2021-03-18 14:26:18.771; - baseSteps.BaseSteps - Response in JSON format is:io.restassured.path.json.JsonPath@35e8316e
+ INFO main - 2021-03-18 14:26:18.779; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 14:26:18.779; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/posts
+ DEBUG main - 2021-03-18 14:26:18.802; - org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.802; - org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.805; - org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+ DEBUG main - 2021-03-18 14:26:18.805; - org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+ DEBUG main - 2021-03-18 14:26:18.805; - org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:18.806; - org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:18.806; - org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+ DEBUG main - 2021-03-18 14:26:18.806; - org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /posts HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:18.808; - org.apache.http.wire -  >> "GET /posts HTTP/1.1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.808; - org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.809; - org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.809; - org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.810; - org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.810; - org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.811; - org.apache.http.wire -  >> "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.811; - org.apache.http.headers - >> GET /posts HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:18.811; - org.apache.http.headers - >> Accept: */*
+ DEBUG main - 2021-03-18 14:26:18.812; - org.apache.http.headers - >> Host: localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.812; - org.apache.http.headers - >> Connection: Keep-Alive
+ DEBUG main - 2021-03-18 14:26:18.812; - org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)
+ DEBUG main - 2021-03-18 14:26:18.813; - org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+ DEBUG main - 2021-03-18 14:26:18.834; - org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.835; - org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.835; - org.apache.http.wire -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.836; - org.apache.http.wire -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.836; - org.apache.http.wire -  << "Cache-Control: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.837; - org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.837; - org.apache.http.wire -  << "Expires: -1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.838; - org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.839; - org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.839; - org.apache.http.wire -  << "Content-Length: 77[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.840; - org.apache.http.wire -  << "ETag: W/"4d-49G7XbVRP2NKipc5uj9Z4hcUq3Y"[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.840; - org.apache.http.wire -  << "Date: Thu, 18 Mar 2021 08:56:18 GMT[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.840; - org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.841; - org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.841; - org.apache.http.wire -  << "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.842; - org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:18.842; - org.apache.http.headers - << HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:18.842; - org.apache.http.headers - << X-Powered-By: Express
+ DEBUG main - 2021-03-18 14:26:18.843; - org.apache.http.headers - << Vary: Origin, Accept-Encoding
+ DEBUG main - 2021-03-18 14:26:18.843; - org.apache.http.headers - << Access-Control-Allow-Credentials: true
+ DEBUG main - 2021-03-18 14:26:18.843; - org.apache.http.headers - << Cache-Control: no-cache
+ DEBUG main - 2021-03-18 14:26:18.843; - org.apache.http.headers - << Pragma: no-cache
+ DEBUG main - 2021-03-18 14:26:18.844; - org.apache.http.headers - << Expires: -1
+ DEBUG main - 2021-03-18 14:26:18.844; - org.apache.http.headers - << X-Content-Type-Options: nosniff
+ DEBUG main - 2021-03-18 14:26:18.844; - org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:18.845; - org.apache.http.headers - << Content-Length: 77
+ DEBUG main - 2021-03-18 14:26:18.845; - org.apache.http.headers - << ETag: W/"4d-49G7XbVRP2NKipc5uj9Z4hcUq3Y"
+ DEBUG main - 2021-03-18 14:26:18.845; - org.apache.http.headers - << Date: Thu, 18 Mar 2021 08:56:18 GMT
+ DEBUG main - 2021-03-18 14:26:18.845; - org.apache.http.headers - << Connection: keep-alive
+ DEBUG main - 2021-03-18 14:26:18.846; - org.apache.http.headers - << Keep-Alive: timeout=5
+ DEBUG main - 2021-03-18 14:26:18.846; - org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+ DEBUG main - 2021-03-18 14:26:18.848; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:18.848; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+ DEBUG main - 2021-03-18 14:26:18.863; - org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.864; - org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.866; - org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+ DEBUG main - 2021-03-18 14:26:18.867; - org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+ DEBUG main - 2021-03-18 14:26:18.868; - org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED

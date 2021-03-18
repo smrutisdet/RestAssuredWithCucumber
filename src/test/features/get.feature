@@ -32,7 +32,7 @@ Feature: User is  able to hit local service.
     Then User gets the correct '<statusCode>'
     And Rsponse is in JSON format
     And return the JSON response
-    And id is '<id>'
+    #And id is '<id>'
     Examples:
       | appendString | statusCode |id|
-     | profile      | 200        |1 |
+     | posts      | 200        |1 |

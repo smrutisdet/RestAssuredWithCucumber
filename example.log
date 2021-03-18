@@ -1,0 +1,577 @@
+ DEBUG main - 2021-03-18 14:26:18.874; - org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:18.874; - org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+ DEBUG main - 2021-03-18 14:26:18.875; - org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /posts HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:18.875; - org.apache.http.wire -  >> "GET /posts HTTP/1.1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.876; - org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.876; - org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.877; - org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.878; - org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.878; - org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.878; - org.apache.http.wire -  >> "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.878; - org.apache.http.headers - >> GET /posts HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:18.879; - org.apache.http.headers - >> Accept: */*
+ DEBUG main - 2021-03-18 14:26:18.879; - org.apache.http.headers - >> Host: localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.880; - org.apache.http.headers - >> Connection: Keep-Alive
+ DEBUG main - 2021-03-18 14:26:18.881; - org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)
+ DEBUG main - 2021-03-18 14:26:18.882; - org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+ DEBUG main - 2021-03-18 14:26:18.902; - org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.902; - org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.903; - org.apache.http.wire -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.904; - org.apache.http.wire -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.904; - org.apache.http.wire -  << "Cache-Control: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.906; - org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.906; - org.apache.http.wire -  << "Expires: -1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.907; - org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.907; - org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.907; - org.apache.http.wire -  << "Content-Length: 77[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.907; - org.apache.http.wire -  << "ETag: W/"4d-49G7XbVRP2NKipc5uj9Z4hcUq3Y"[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.908; - org.apache.http.wire -  << "Date: Thu, 18 Mar 2021 08:56:18 GMT[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.908; - org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.908; - org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.909; - org.apache.http.wire -  << "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.909; - org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:18.910; - org.apache.http.headers - << HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:18.910; - org.apache.http.headers - << X-Powered-By: Express
+ DEBUG main - 2021-03-18 14:26:18.910; - org.apache.http.headers - << Vary: Origin, Accept-Encoding
+ DEBUG main - 2021-03-18 14:26:18.912; - org.apache.http.headers - << Access-Control-Allow-Credentials: true
+ DEBUG main - 2021-03-18 14:26:18.912; - org.apache.http.headers - << Cache-Control: no-cache
+ DEBUG main - 2021-03-18 14:26:18.912; - org.apache.http.headers - << Pragma: no-cache
+ DEBUG main - 2021-03-18 14:26:18.913; - org.apache.http.headers - << Expires: -1
+ DEBUG main - 2021-03-18 14:26:18.913; - org.apache.http.headers - << X-Content-Type-Options: nosniff
+ DEBUG main - 2021-03-18 14:26:18.914; - org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:18.914; - org.apache.http.headers - << Content-Length: 77
+ DEBUG main - 2021-03-18 14:26:18.914; - org.apache.http.headers - << ETag: W/"4d-49G7XbVRP2NKipc5uj9Z4hcUq3Y"
+ DEBUG main - 2021-03-18 14:26:18.914; - org.apache.http.headers - << Date: Thu, 18 Mar 2021 08:56:18 GMT
+ DEBUG main - 2021-03-18 14:26:18.915; - org.apache.http.headers - << Connection: keep-alive
+ DEBUG main - 2021-03-18 14:26:18.915; - org.apache.http.headers - << Keep-Alive: timeout=5
+ DEBUG main - 2021-03-18 14:26:18.915; - org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+ DEBUG main - 2021-03-18 14:26:18.916; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:18.916; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+ DEBUG main - 2021-03-18 14:26:18.926; - org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.926; - org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.928; - org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+ DEBUG main - 2021-03-18 14:26:18.928; - org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+ DEBUG main - 2021-03-18 14:26:18.929; - org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:18.929; - org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:18.929; - org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+ DEBUG main - 2021-03-18 14:26:18.929; - org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /posts HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:18.930; - org.apache.http.wire -  >> "GET /posts HTTP/1.1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.930; - org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.930; - org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.931; - org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.931; - org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.931; - org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.931; - org.apache.http.wire -  >> "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.932; - org.apache.http.headers - >> GET /posts HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:18.932; - org.apache.http.headers - >> Accept: */*
+ DEBUG main - 2021-03-18 14:26:18.932; - org.apache.http.headers - >> Host: localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.932; - org.apache.http.headers - >> Connection: Keep-Alive
+ DEBUG main - 2021-03-18 14:26:18.933; - org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)
+ DEBUG main - 2021-03-18 14:26:18.933; - org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+ DEBUG main - 2021-03-18 14:26:18.959; - org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.960; - org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.960; - org.apache.http.wire -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.961; - org.apache.http.wire -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.961; - org.apache.http.wire -  << "Cache-Control: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.962; - org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.962; - org.apache.http.wire -  << "Expires: -1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.962; - org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.963; - org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.964; - org.apache.http.wire -  << "Content-Length: 77[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.964; - org.apache.http.wire -  << "ETag: W/"4d-49G7XbVRP2NKipc5uj9Z4hcUq3Y"[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.965; - org.apache.http.wire -  << "Date: Thu, 18 Mar 2021 08:56:18 GMT[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.965; - org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.965; - org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.966; - org.apache.http.wire -  << "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.967; - org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:18.967; - org.apache.http.headers - << HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:18.968; - org.apache.http.headers - << X-Powered-By: Express
+ DEBUG main - 2021-03-18 14:26:18.968; - org.apache.http.headers - << Vary: Origin, Accept-Encoding
+ DEBUG main - 2021-03-18 14:26:18.968; - org.apache.http.headers - << Access-Control-Allow-Credentials: true
+ DEBUG main - 2021-03-18 14:26:18.969; - org.apache.http.headers - << Cache-Control: no-cache
+ DEBUG main - 2021-03-18 14:26:18.969; - org.apache.http.headers - << Pragma: no-cache
+ DEBUG main - 2021-03-18 14:26:18.969; - org.apache.http.headers - << Expires: -1
+ DEBUG main - 2021-03-18 14:26:18.970; - org.apache.http.headers - << X-Content-Type-Options: nosniff
+ DEBUG main - 2021-03-18 14:26:18.970; - org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:18.970; - org.apache.http.headers - << Content-Length: 77
+ DEBUG main - 2021-03-18 14:26:18.970; - org.apache.http.headers - << ETag: W/"4d-49G7XbVRP2NKipc5uj9Z4hcUq3Y"
+ DEBUG main - 2021-03-18 14:26:18.970; - org.apache.http.headers - << Date: Thu, 18 Mar 2021 08:56:18 GMT
+ DEBUG main - 2021-03-18 14:26:18.971; - org.apache.http.headers - << Connection: keep-alive
+ DEBUG main - 2021-03-18 14:26:18.971; - org.apache.http.headers - << Keep-Alive: timeout=5
+ DEBUG main - 2021-03-18 14:26:18.971; - org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+ DEBUG main - 2021-03-18 14:26:18.971; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:18.972; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+ INFO main - 2021-03-18 14:26:18.973; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@53a9fcfd
+ DEBUG main - 2021-03-18 14:26:18.973; - org.apache.http.wire -  << "[[\n]"
+ DEBUG main - 2021-03-18 14:26:18.973; - org.apache.http.wire -  << "  {[\n]"
+ DEBUG main - 2021-03-18 14:26:18.973; - org.apache.http.wire -  << "    "id": 1,[\n]"
+ DEBUG main - 2021-03-18 14:26:18.973; - org.apache.http.wire -  << "    "title": "json-server",[\n]"
+ DEBUG main - 2021-03-18 14:26:18.974; - org.apache.http.wire -  << "    "author": "typicode"[\n]"
+ DEBUG main - 2021-03-18 14:26:18.974; - org.apache.http.wire -  << "  }[\n]"
+ DEBUG main - 2021-03-18 14:26:18.974; - org.apache.http.wire -  << "]"
+ DEBUG main - 2021-03-18 14:26:18.974; - org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6a9b9909
+ DEBUG main - 2021-03-18 14:26:18.974; - org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive for 5000 MILLISECONDS
+ INFO main - 2021-03-18 14:26:18.974; - baseSteps.BaseSteps - Response in String format is:[
+  {
+    "id": 1,
+    "title": "json-server",
+    "author": "typicode"
+  }
+]
+ INFO main - 2021-03-18 14:26:18.975; - baseSteps.BaseSteps - Response in JSON format is:io.restassured.path.json.JsonPath@75361cf6
+ INFO main - 2021-03-18 14:26:18.976; - baseSteps.BaseSteps - URL for get with append string is:+++++++++http://localhost:3000/posts
+ DEBUG main - 2021-03-18 14:26:18.981; - org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.982; - org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.985; - org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+ DEBUG main - 2021-03-18 14:26:18.985; - org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+ DEBUG main - 2021-03-18 14:26:18.987; - org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:18.987; - org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+ DEBUG main - 2021-03-18 14:26:18.988; - org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+ DEBUG main - 2021-03-18 14:26:18.988; - org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /posts HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:18.989; - org.apache.http.wire -  >> "GET /posts HTTP/1.1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.989; - org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.990; - org.apache.http.wire -  >> "Host: localhost:3000[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.990; - org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.990; - org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.991; - org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.991; - org.apache.http.wire -  >> "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:18.992; - org.apache.http.headers - >> GET /posts HTTP/1.1
+ DEBUG main - 2021-03-18 14:26:18.993; - org.apache.http.headers - >> Accept: */*
+ DEBUG main - 2021-03-18 14:26:18.993; - org.apache.http.headers - >> Host: localhost:3000
+ DEBUG main - 2021-03-18 14:26:18.993; - org.apache.http.headers - >> Connection: Keep-Alive
+ DEBUG main - 2021-03-18 14:26:18.994; - org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_281)
+ DEBUG main - 2021-03-18 14:26:18.995; - org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+ DEBUG main - 2021-03-18 14:26:19.016; - org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:19.017; - org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:19.017; - org.apache.http.wire -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:19.018; - org.apache.http.wire -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:19.018; - org.apache.http.wire -  << "Cache-Control: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:19.019; - org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:19.019; - org.apache.http.wire -  << "Expires: -1[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:19.020; - org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:19.020; - org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:19.021; - org.apache.http.wire -  << "Content-Length: 77[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:19.021; - org.apache.http.wire -  << "ETag: W/"4d-49G7XbVRP2NKipc5uj9Z4hcUq3Y"[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:19.022; - org.apache.http.wire -  << "Date: Thu, 18 Mar 2021 08:56:19 GMT[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:19.022; - org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:19.022; - org.apache.http.wire -  << "Keep-Alive: timeout=5[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:19.023; - org.apache.http.wire -  << "[\r][\n]"
+ DEBUG main - 2021-03-18 14:26:19.023; - org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:19.024; - org.apache.http.headers - << HTTP/1.1 200 OK
+ DEBUG main - 2021-03-18 14:26:19.024; - org.apache.http.headers - << X-Powered-By: Express
+ DEBUG main - 2021-03-18 14:26:19.025; - org.apache.http.headers - << Vary: Origin, Accept-Encoding
+ DEBUG main - 2021-03-18 14:26:19.025; - org.apache.http.headers - << Access-Control-Allow-Credentials: true
+ DEBUG main - 2021-03-18 14:26:19.027; - org.apache.http.headers - << Cache-Control: no-cache
+ DEBUG main - 2021-03-18 14:26:19.027; - org.apache.http.headers - << Pragma: no-cache
+ DEBUG main - 2021-03-18 14:26:19.028; - org.apache.http.headers - << Expires: -1
+ DEBUG main - 2021-03-18 14:26:19.028; - org.apache.http.headers - << X-Content-Type-Options: nosniff
+ DEBUG main - 2021-03-18 14:26:19.029; - org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:19.029; - org.apache.http.headers - << Content-Length: 77
+ DEBUG main - 2021-03-18 14:26:19.030; - org.apache.http.headers - << ETag: W/"4d-49G7XbVRP2NKipc5uj9Z4hcUq3Y"
+ DEBUG main - 2021-03-18 14:26:19.030; - org.apache.http.headers - << Date: Thu, 18 Mar 2021 08:56:19 GMT
+ DEBUG main - 2021-03-18 14:26:19.031; - org.apache.http.headers - << Connection: keep-alive
+ DEBUG main - 2021-03-18 14:26:19.031; - org.apache.http.headers - << Keep-Alive: timeout=5
+ DEBUG main - 2021-03-18 14:26:19.032; - org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+ DEBUG main - 2021-03-18 14:26:19.033; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+ DEBUG main - 2021-03-18 14:26:19.033; - io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+ INFO main - 2021-03-18 14:26:19.034; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@10bea4
+ DEBUG main - 2021-03-18 14:26:19.035; - org.apache.http.wire -  << "[[\n]"
+ DEBUG main - 2021-03-18 14:26:19.035; - org.apache.http.wire -  << "  {[\n]"
+ DEBUG main - 2021-03-18 14:26:19.035; - org.apache.http.wire -  << "    "id": 1,[\n]"
+ DEBUG main - 2021-03-18 14:26:19.036; - org.apache.http.wire -  << "    "title": "json-server",[\n]"
+ DEBUG main - 2021-03-18 14:26:19.036; - org.apache.http.wire -  << "    "author": "typicode"[\n]"
+ DEBUG main - 2021-03-18 14:26:19.036; - org.apache.http.wire -  << "  }[\n]"
+ DEBUG main - 2021-03-18 14:26:19.036; - org.apache.http.wire -  << "]"
+ DEBUG main - 2021-03-18 14:26:19.037; - org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2b9f74d0
+ DEBUG main - 2021-03-18 14:26:19.037; - org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive for 5000 MILLISECONDS
+ INFO main - 2021-03-18 14:26:19.037; - baseSteps.BaseSteps - Response in String format is:[
+  {
+    "id": 1,
+    "title": "json-server",
+    "author": "typicode"
+  }
+]
+ INFO main - 2021-03-18 14:26:19.038; - baseSteps.BaseSteps - Response in JSON format is:io.restassured.path.json.JsonPath@5a2bd7c8
+ DEBUG Finalizer - 2021-03-18 14:26:19.136; - org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:61045<->127.0.0.1:3000 closed
+ DEBUG Finalizer - 2021-03-18 14:26:19.138; - org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:61046<->127.0.0.1:3000 closed
+ DEBUG Finalizer - 2021-03-18 14:26:19.140; - org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:61041<->127.0.0.1:3000 closed
+ DEBUG Finalizer - 2021-03-18 14:26:19.141; - org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:61042<->127.0.0.1:3000 closed
+ DEBUG Finalizer - 2021-03-18 14:26:19.142; - org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:61043<->127.0.0.1:3000 closed
+ DEBUG main - 2021-03-18 14:26:19.549; - freemarker.cache - Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
+ DEBUG main - 2021-03-18 14:26:19.552; - freemarker.cache - TemplateLoader.findTemplateSource("index_en.ftl"): Not found
+ DEBUG main - 2021-03-18 14:26:19.554; - freemarker.cache - TemplateLoader.findTemplateSource("index.ftl"): Found
+ DEBUG main - 2021-03-18 14:26:19.557; - freemarker.cache - Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/smohapatra/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
+ DEBUG main - 2021-03-18 14:26:19.738; - freemarker.cache - Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
+ DEBUG main - 2021-03-18 14:26:19.738; - freemarker.cache - TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+ DEBUG main - 2021-03-18 14:26:19.739; - freemarker.cache - TemplateLoader.findTemplateSource("head.ftl"): Found
+ DEBUG main - 2021-03-18 14:26:19.739; - freemarker.cache - Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/smohapatra/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
+ DEBUG main - 2021-03-18 14:26:19.764; - freemarker.cache - Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
+ DEBUG main - 2021-03-18 14:26:19.765; - freemarker.cache - TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
+ DEBUG main - 2021-03-18 14:26:19.766; - freemarker.cache - TemplateLoader.findTemplateSource("nav.ftl"): Found
+ DEBUG main - 2021-03-18 14:26:19.767; - freemarker.cache - Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/smohapatra/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"
+ DEBUG main - 2021-03-18 14:26:19.774; - freemarker.cache - Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.
+ DEBUG main - 2021-03-18 14:26:19.774; - freemarker.cache - TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
+ DEBUG main - 2021-03-18 14:26:19.775; - freemarker.cache - TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
+ DEBUG main - 2021-03-18 14:26:19.775; - freemarker.cache - Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/smohapatra/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"
+ DEBUG main - 2021-03-18 14:26:19.787; - freemarker.cache - Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+ DEBUG main - 2021-03-18 14:26:19.788; - freemarker.cache - TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
+ DEBUG main - 2021-03-18 14:26:19.788; - freemarker.cache - TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
+ DEBUG main - 2021-03-18 14:26:19.789; - freemarker.cache - Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/smohapatra/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"
+ DEBUG main - 2021-03-18 14:26:19.800; - freemarker.cache - Couldn't find template in cache for "test-view/bdd.ftl"("en", UTF-8, parsed); will try to load it.
+ DEBUG main - 2021-03-18 14:26:19.801; - freemarker.cache - TemplateLoader.findTemplateSource("test-view/bdd_en.ftl"): Not found
+ DEBUG main - 2021-03-18 14:26:19.801; - freemarker.cache - TemplateLoader.findTemplateSource("test-view/bdd.ftl"): Found
+ DEBUG main - 2021-03-18 14:26:19.802; - freemarker.cache - Loading template for "test-view/bdd.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/smohapatra/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/bdd.ftl"
+ DEBUG main - 2021-03-18 14:26:19.820; - freemarker.cache - Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.
+ DEBUG main - 2021-03-18 14:26:19.821; - freemarker.cache - TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
+ DEBUG main - 2021-03-18 14:26:19.821; - freemarker.cache - TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
+ DEBUG main - 2021-03-18 14:26:19.821; - freemarker.cache - Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/smohapatra/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"
+ DEBUG main - 2021-03-18 14:26:19.825; - freemarker.cache - Couldn't find template in cache for "author-view/author-view.ftl"("en", UTF-8, parsed); will try to load it.
+ DEBUG main - 2021-03-18 14:26:19.825; - freemarker.cache - TemplateLoader.findTemplateSource("author-view/author-view_en.ftl"): Not found
+ DEBUG main - 2021-03-18 14:26:19.826; - freemarker.cache - TemplateLoader.findTemplateSource("author-view/author-view.ftl"): Found
+ DEBUG main - 2021-03-18 14:26:19.826; - freemarker.cache - Loading template for "author-view/author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/smohapatra/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/author-view/author-view.ftl"
+ DEBUG main - 2021-03-18 14:26:19.829; - freemarker.cache - Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+ DEBUG main - 2021-03-18 14:26:19.830; - freemarker.cache - TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
+ DEBUG main - 2021-03-18 14:26:19.830; - freemarker.cache - TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
+ DEBUG main - 2021-03-18 14:26:19.831; - freemarker.cache - Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/smohapatra/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"
+ DEBUG main - 2021-03-18 14:26:19.838; - freemarker.cache - Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+ DEBUG main - 2021-03-18 14:26:19.839; - freemarker.cache - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
+ DEBUG main - 2021-03-18 14:26:19.839; - freemarker.cache - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
+ DEBUG main - 2021-03-18 14:26:19.840; - freemarker.cache - Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/smohapatra/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"
+ DEBUG main - 2021-03-18 14:26:19.847; - freemarker.cache - Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+ DEBUG main - 2021-03-18 14:26:19.848; - freemarker.cache - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+ DEBUG main - 2021-03-18 14:26:19.848; - freemarker.cache - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+ DEBUG main - 2021-03-18 14:26:19.849; - freemarker.cache - Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/smohapatra/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"
+ INFO main - 2021-03-18 14:27:14.047; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 14:27:14.050; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/posts
+ INFO main - 2021-03-18 14:27:15.975; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 14:27:15.977; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/comments
+ INFO main - 2021-03-18 14:27:16.090; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 14:27:16.092; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/profile
+ INFO main - 2021-03-18 14:27:16.201; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 14:27:16.201; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/posts
+ INFO main - 2021-03-18 14:27:16.304; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@77cb9cd1
+ INFO main - 2021-03-18 14:27:16.323; - baseSteps.BaseSteps - Response in String format is:[
+  {
+    "id": 1,
+    "title": "json-server",
+    "author": "typicode"
+  }
+]
+ INFO main - 2021-03-18 14:27:16.325; - baseSteps.BaseSteps - Response in JSON format is:io.restassured.path.json.JsonPath@7d0cc890
+ INFO main - 2021-03-18 14:27:16.331; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 14:27:16.332; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/comments
+ INFO main - 2021-03-18 14:27:16.397; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@6972c30a
+ INFO main - 2021-03-18 14:27:16.398; - baseSteps.BaseSteps - Response in String format is:[
+  {
+    "id": 1,
+    "body": "some comment",
+    "postId": 1
+  }
+]
+ INFO main - 2021-03-18 14:27:16.398; - baseSteps.BaseSteps - Response in JSON format is:io.restassured.path.json.JsonPath@3910fe11
+ INFO main - 2021-03-18 14:27:16.404; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 14:27:16.404; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/profile
+ INFO main - 2021-03-18 14:27:16.494; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@60737b23
+ INFO main - 2021-03-18 14:27:16.495; - baseSteps.BaseSteps - Response in String format is:{
+  "name": "typicode"
+}
+ INFO main - 2021-03-18 14:27:16.495; - baseSteps.BaseSteps - Response in JSON format is:io.restassured.path.json.JsonPath@33f98231
+ INFO main - 2021-03-18 14:27:16.504; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 14:27:16.505; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/posts
+ INFO main - 2021-03-18 14:27:16.595; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@301aa982
+ INFO main - 2021-03-18 14:27:16.596; - baseSteps.BaseSteps - Response in String format is:[
+  {
+    "id": 1,
+    "title": "json-server",
+    "author": "typicode"
+  }
+]
+ INFO main - 2021-03-18 14:27:16.596; - baseSteps.BaseSteps - Response in JSON format is:io.restassured.path.json.JsonPath@c6634d
+ INFO main - 2021-03-18 14:27:16.599; - baseSteps.BaseSteps - URL for get with append string is:+++++++++http://localhost:3000/posts
+ INFO main - 2021-03-18 14:27:16.620; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@31133b6e
+ INFO main - 2021-03-18 14:27:16.621; - baseSteps.BaseSteps - Response in String format is:[
+  {
+    "id": 1,
+    "title": "json-server",
+    "author": "typicode"
+  }
+]
+ INFO main - 2021-03-18 14:27:16.622; - baseSteps.BaseSteps - Response in JSON format is:io.restassured.path.json.JsonPath@6401d0a0
+ INFO main - 2021-03-18 15:33:04.042; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 15:33:04.042; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/posts
+ INFO main - 2021-03-18 15:33:05.656; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 15:33:05.656; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/comments
+ INFO main - 2021-03-18 15:33:05.741; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 15:33:05.741; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/profile
+ INFO main - 2021-03-18 15:33:05.841; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 15:33:05.841; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/posts
+ INFO main - 2021-03-18 15:33:05.957; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@77cb9cd1
+ INFO main - 2021-03-18 15:33:05.973; - baseSteps.BaseSteps - Response in String format is:[
+  {
+    "id": 1,
+    "title": "json-server",
+    "author": "typicode"
+  }
+]
+ INFO main - 2021-03-18 15:33:05.973; - baseSteps.BaseSteps - Response in JSON format is:io.restassured.path.json.JsonPath@7d0cc890
+ INFO main - 2021-03-18 15:33:05.973; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 15:33:05.973; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/comments
+ INFO main - 2021-03-18 15:33:06.073; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@6972c30a
+ INFO main - 2021-03-18 15:33:06.073; - baseSteps.BaseSteps - Response in String format is:[
+  {
+    "id": 1,
+    "body": "some comment",
+    "postId": 1
+  }
+]
+ INFO main - 2021-03-18 15:33:06.073; - baseSteps.BaseSteps - Response in JSON format is:io.restassured.path.json.JsonPath@3910fe11
+ INFO main - 2021-03-18 15:33:06.073; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 15:33:06.073; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/profile
+ INFO main - 2021-03-18 15:33:06.258; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@60737b23
+ INFO main - 2021-03-18 15:33:06.258; - baseSteps.BaseSteps - Response in String format is:{
+  "name": "typicode"
+}
+ INFO main - 2021-03-18 15:33:06.258; - baseSteps.BaseSteps - Response in JSON format is:io.restassured.path.json.JsonPath@33f98231
+ INFO main - 2021-03-18 15:33:06.258; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 15:33:06.258; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/posts
+ INFO main - 2021-03-18 15:33:06.428; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@301aa982
+ INFO main - 2021-03-18 15:33:06.428; - baseSteps.BaseSteps - Response in String format is:[
+  {
+    "id": 1,
+    "title": "json-server",
+    "author": "typicode"
+  }
+]
+ INFO main - 2021-03-18 15:33:06.428; - baseSteps.BaseSteps - Response in JSON format is:io.restassured.path.json.JsonPath@c6634d
+ INFO main - 2021-03-18 15:33:06.428; - baseSteps.BaseSteps - URL for get with append string is:+++++++++http://localhost:3000/posts
+ INFO main - 2021-03-18 15:33:06.475; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@31133b6e
+ INFO main - 2021-03-18 15:33:06.475; - baseSteps.BaseSteps - Response in String format is:[
+  {
+    "id": 1,
+    "title": "json-server",
+    "author": "typicode"
+  }
+]
+ INFO main - 2021-03-18 16:39:44.616; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 16:39:44.622; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/posts
+ INFO main - 2021-03-18 16:39:48.020; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 16:39:48.023; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/comments
+ INFO main - 2021-03-18 16:39:48.131; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 16:39:48.133; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/profile
+ INFO main - 2021-03-18 16:39:48.239; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 16:39:48.240; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/posts
+ INFO main - 2021-03-18 16:39:48.382; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@77cb9cd1
+ INFO main - 2021-03-18 16:39:48.430; - baseSteps.BaseSteps - Response in String format is:[
+  {
+    "id": 1,
+    "title": "json-server",
+    "author": "typicode"
+  }
+]
+ INFO main - 2021-03-18 16:39:48.432; - baseSteps.BaseSteps - Response in JSON format is:io.restassured.path.json.JsonPath@7d0cc890
+ INFO main - 2021-03-18 16:39:48.446; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 16:39:48.447; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/comments
+ INFO main - 2021-03-18 16:39:48.577; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@6972c30a
+ INFO main - 2021-03-18 16:39:48.582; - baseSteps.BaseSteps - Response in String format is:[
+  {
+    "id": 1,
+    "body": "some comment",
+    "postId": 1
+  }
+]
+ INFO main - 2021-03-18 16:39:48.583; - baseSteps.BaseSteps - Response in JSON format is:io.restassured.path.json.JsonPath@3910fe11
+ INFO main - 2021-03-18 16:39:48.593; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 16:39:48.593; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/profile
+ INFO main - 2021-03-18 16:39:48.714; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@60737b23
+ INFO main - 2021-03-18 16:39:48.715; - baseSteps.BaseSteps - Response in String format is:{
+  "name": "typicode"
+}
+ INFO main - 2021-03-18 16:39:48.716; - baseSteps.BaseSteps - Response in JSON format is:io.restassured.path.json.JsonPath@33f98231
+ INFO main - 2021-03-18 16:39:48.731; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 16:39:48.732; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/posts
+ INFO main - 2021-03-18 16:39:48.928; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@301aa982
+ INFO main - 2021-03-18 16:39:48.930; - baseSteps.BaseSteps - Response in String format is:[
+  {
+    "id": 1,
+    "title": "json-server",
+    "author": "typicode"
+  }
+]
+ INFO main - 2021-03-18 16:39:48.931; - baseSteps.BaseSteps - Response in JSON format is:io.restassured.path.json.JsonPath@c6634d
+ INFO main - 2021-03-18 16:39:48.934; - baseSteps.BaseSteps - URL for get with append string is:+++++++++http://localhost:3000/posts
+ INFO main - 2021-03-18 16:39:48.972; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@31133b6e
+ INFO main - 2021-03-18 16:39:48.974; - baseSteps.BaseSteps - Response in String format is:[
+  {
+    "id": 1,
+    "title": "json-server",
+    "author": "typicode"
+  }
+]
+ INFO main - 2021-03-18 16:41:10.628; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 16:41:10.632; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/posts
+ INFO main - 2021-03-18 16:41:12.773; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 16:41:12.773; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/comments
+ INFO main - 2021-03-18 16:41:12.886; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 16:41:12.890; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/profile
+ INFO main - 2021-03-18 16:41:13.040; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 16:41:13.041; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/posts
+ INFO main - 2021-03-18 16:41:13.170; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@77cb9cd1
+ INFO main - 2021-03-18 16:41:13.217; - baseSteps.BaseSteps - Response in String format is:[
+  {
+    "id": 1,
+    "title": "json-server",
+    "author": "typicode"
+  }
+]
+ INFO main - 2021-03-18 16:41:13.222; - baseSteps.BaseSteps - Response in JSON format is:io.restassured.path.json.JsonPath@7d0cc890
+ INFO main - 2021-03-18 16:41:13.236; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 16:41:13.237; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/comments
+ INFO main - 2021-03-18 16:41:13.426; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@6972c30a
+ INFO main - 2021-03-18 16:41:13.428; - baseSteps.BaseSteps - Response in String format is:[
+  {
+    "id": 1,
+    "body": "some comment",
+    "postId": 1
+  }
+]
+ INFO main - 2021-03-18 16:41:13.428; - baseSteps.BaseSteps - Response in JSON format is:io.restassured.path.json.JsonPath@3910fe11
+ INFO main - 2021-03-18 16:41:13.441; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 16:41:13.442; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/profile
+ INFO main - 2021-03-18 16:41:13.576; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@60737b23
+ INFO main - 2021-03-18 16:41:13.578; - baseSteps.BaseSteps - Response in String format is:{
+  "name": "typicode"
+}
+ INFO main - 2021-03-18 16:41:13.578; - baseSteps.BaseSteps - Response in JSON format is:io.restassured.path.json.JsonPath@33f98231
+ INFO main - 2021-03-18 16:41:13.595; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 16:41:13.596; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/posts
+ INFO main - 2021-03-18 16:41:13.775; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@301aa982
+ INFO main - 2021-03-18 16:41:13.775; - baseSteps.BaseSteps - Response in String format is:[
+  {
+    "id": 1,
+    "title": "json-server",
+    "author": "typicode"
+  }
+]
+ INFO main - 2021-03-18 16:41:13.779; - baseSteps.BaseSteps - Response in JSON format is:io.restassured.path.json.JsonPath@c6634d
+ INFO main - 2021-03-18 16:41:13.784; - baseSteps.BaseSteps - URL for get with append string is:+++++++++http://localhost:3000/posts
+ INFO main - 2021-03-18 16:41:13.817; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@31133b6e
+ INFO main - 2021-03-18 16:41:13.817; - baseSteps.BaseSteps - Response in String format is:[
+  {
+    "id": 1,
+    "title": "json-server",
+    "author": "typicode"
+  }
+]
+ INFO main - 2021-03-18 16:41:14.543; - baseSteps.BaseSteps - Actual response id is:[1]
+ INFO main - 2021-03-18 16:43:44.862; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 16:43:44.865; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/posts
+ INFO main - 2021-03-18 16:43:46.800; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 16:43:46.803; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/comments
+ INFO main - 2021-03-18 16:43:46.966; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 16:43:46.969; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/profile
+ INFO main - 2021-03-18 16:43:47.083; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 16:43:47.084; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/posts
+ INFO main - 2021-03-18 16:43:47.235; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@77cb9cd1
+ INFO main - 2021-03-18 16:43:47.258; - baseSteps.BaseSteps - Response in String format is:[
+  {
+    "id": 1,
+    "title": "json-server",
+    "author": "typicode"
+  }
+]
+ INFO main - 2021-03-18 16:43:47.262; - baseSteps.BaseSteps - Response in JSON format is:io.restassured.path.json.JsonPath@7d0cc890
+ INFO main - 2021-03-18 16:43:47.267; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 16:43:47.268; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/comments
+ INFO main - 2021-03-18 16:43:47.379; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@6972c30a
+ INFO main - 2021-03-18 16:43:47.379; - baseSteps.BaseSteps - Response in String format is:[
+  {
+    "id": 1,
+    "body": "some comment",
+    "postId": 1
+  }
+]
+ INFO main - 2021-03-18 16:43:47.380; - baseSteps.BaseSteps - Response in JSON format is:io.restassured.path.json.JsonPath@3910fe11
+ INFO main - 2021-03-18 16:43:47.387; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 16:43:47.388; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/profile
+ INFO main - 2021-03-18 16:43:47.504; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@60737b23
+ INFO main - 2021-03-18 16:43:47.505; - baseSteps.BaseSteps - Response in String format is:{
+  "name": "typicode"
+}
+ INFO main - 2021-03-18 16:43:47.506; - baseSteps.BaseSteps - Response in JSON format is:io.restassured.path.json.JsonPath@33f98231
+ INFO main - 2021-03-18 16:43:47.517; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 16:43:47.518; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/posts
+ INFO main - 2021-03-18 16:43:47.623; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@301aa982
+ INFO main - 2021-03-18 16:43:47.624; - baseSteps.BaseSteps - Response in String format is:[
+  {
+    "id": 1,
+    "title": "json-server",
+    "author": "typicode"
+  }
+]
+ INFO main - 2021-03-18 16:43:47.624; - baseSteps.BaseSteps - Response in JSON format is:io.restassured.path.json.JsonPath@c6634d
+ INFO main - 2021-03-18 16:43:47.626; - baseSteps.BaseSteps - URL for get with append string is:+++++++++http://localhost:3000/posts
+ INFO main - 2021-03-18 16:43:47.653; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@31133b6e
+ INFO main - 2021-03-18 16:43:47.655; - baseSteps.BaseSteps - Response in String format is:[
+  {
+    "id": 1,
+    "title": "json-server",
+    "author": "typicode"
+  }
+]
+ INFO main - 2021-03-18 16:43:47.990; - baseSteps.BaseSteps - Actual response id is:[1]
+ INFO main - 2021-03-18 16:50:20.753; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 16:50:20.757; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/posts
+ INFO main - 2021-03-18 16:50:22.834; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 16:50:22.835; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/comments
+ INFO main - 2021-03-18 16:50:22.898; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 16:50:22.898; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/profile
+ INFO main - 2021-03-18 16:50:22.981; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 16:50:22.982; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/posts
+ INFO main - 2021-03-18 16:50:23.082; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@77cb9cd1
+ INFO main - 2021-03-18 16:50:23.103; - baseSteps.BaseSteps - Response in String format is:[
+  {
+    "id": 1,
+    "title": "json-server",
+    "author": "typicode"
+  }
+]
+ INFO main - 2021-03-18 16:50:23.106; - baseSteps.BaseSteps - Response in JSON format is:io.restassured.path.json.JsonPath@7d0cc890
+ INFO main - 2021-03-18 16:50:23.112; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 16:50:23.112; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/comments
+ INFO main - 2021-03-18 16:50:23.187; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@6972c30a
+ INFO main - 2021-03-18 16:50:23.188; - baseSteps.BaseSteps - Response in String format is:[
+  {
+    "id": 1,
+    "body": "some comment",
+    "postId": 1
+  }
+]
+ INFO main - 2021-03-18 16:50:23.188; - baseSteps.BaseSteps - Response in JSON format is:io.restassured.path.json.JsonPath@3910fe11
+ INFO main - 2021-03-18 16:50:23.195; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 16:50:23.196; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/profile
+ INFO main - 2021-03-18 16:50:23.302; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@60737b23
+ INFO main - 2021-03-18 16:50:23.303; - baseSteps.BaseSteps - Response in String format is:{
+  "name": "typicode"
+}
+ INFO main - 2021-03-18 16:50:23.304; - baseSteps.BaseSteps - Response in JSON format is:io.restassured.path.json.JsonPath@33f98231
+ INFO main - 2021-03-18 16:50:23.311; - baseSteps.BaseSteps -  Base URL is :http://localhost:3000
+ INFO main - 2021-03-18 16:50:23.312; - baseSteps.BaseSteps - =======URL is++++++++++++++++++++++++++ http://localhost:3000/posts
+ INFO main - 2021-03-18 16:50:23.402; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@301aa982
+ INFO main - 2021-03-18 16:50:23.403; - baseSteps.BaseSteps - Response in String format is:[
+  {
+    "id": 1,
+    "title": "json-server",
+    "author": "typicode"
+  }
+]
+ INFO main - 2021-03-18 16:50:23.403; - baseSteps.BaseSteps - Response in JSON format is:io.restassured.path.json.JsonPath@c6634d
+ INFO main - 2021-03-18 16:50:23.406; - baseSteps.BaseSteps - URL for get with append string is:+++++++++http://localhost:3000/posts
+ INFO main - 2021-03-18 16:50:23.432; - baseSteps.BaseSteps - Raw Response is:io.restassured.internal.RestAssuredResponseImpl@31133b6e
+ INFO main - 2021-03-18 16:50:23.433; - baseSteps.BaseSteps - Response in String format is:[
+  {
+    "id": 1,
+    "title": "json-server",
+    "author": "typicode"
+  }
+]
+ INFO main - 2021-03-18 16:50:23.724; - baseSteps.BaseSteps - Actual response id is:[1]
